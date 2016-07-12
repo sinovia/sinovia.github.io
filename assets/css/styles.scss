@@ -1,0 +1,172 @@
+
+@import 'https://fonts.googleapis.com/css?family=Cedarville+Cursive|Marmelad';
+
+$plum: #693F9B;
+$graymatter: #6d6971;
+$white: #ffffff;
+$plumoffset: #60398d;
+
+#bodytop,
+	#bodybottom {
+		position: fixed;
+		left: 0;
+		right: 0;
+		height: 50%;
+    z-index: -250;
+	}
+
+	#bodytop {
+		top: 0;
+		background-color: $plum;
+	}
+
+	#bodybottom {
+		bottom: 0;
+		background-color: $plumoffset;
+	}
+
+  .headerName{
+    position: absolute;
+    top: 10%;
+    left: 9.5%;
+    font-size: 35px;
+    font-family: "Marmelad";
+    color: #271739;
+      z-index: 10;
+  }
+
+.contactPill {
+  border: 2px solid $graymatter;
+    font-family: "Marmelad";
+  width: 5%;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: $graymatter;
+  position: absolute;
+  top: 10%;
+  left: 52%;
+      &:hover {
+        background-color: $plumoffset;
+        color: #271739;
+      }
+}
+
+.aboutPill {
+  border: 2px solid $white;
+    font-family: "Marmelad";
+  width: 5%;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: $white;
+  position: absolute;
+  top: 10%;
+  left: 41%;
+      &:hover {
+        background-color: $white;
+        color: #271739;
+      }
+}
+
+.welcomePill {
+  border: 2px solid $graymatter;
+    font-family: "Marmelad";
+  width: 20%;
+  height: 5%;
+  text-align: center;
+  border-radius: 10px;
+  color: $graymatter;
+  background-color: $plum;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  text-align: center;
+  margin: 5px;
+  display: inline-block;
+  z-index: 10;
+    p{
+      color: #F7F7F7;
+      display: inline-block;
+      font-family: "Marmelad";
+      font-weight: lighter;
+      margin: 15px;
+      font-size: 15px;
+    }
+
+    .fa-chevron-right, .fa-chevron-left {
+      color: white;
+      font-size: 20px;
+      padding: 2px;
+    }
+      }
+
+  .logo{
+    top: 9.5%;
+    left: 6%;
+    height: 50px;
+    width: 50px;
+    border-radius: 80px;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    font-family: "Cedarville Cursive";
+    background-color: $plum;
+      z-index: 10;
+
+    .initials {
+      color: white;
+  position: relative;
+  font-size: 24px;
+  top: 28%;
+    }
+  }
+
+
+  .leftContainer, .rightContainer {
+
+    width: 45%;
+    height: 800px;
+    display: inline-block;
+    margin-top: 5%;
+    text-align: center;
+    opacity: .9;
+    position: absolute;
+      .fa{
+        color: $plumoffset;
+        border: 1px solid gray;
+        border-radius: 40px;
+        padding: 10px;
+      }
+  }
+
+
+
+  .leftContainer {
+    margin-left: 5%;
+    background-color: $graymatter;
+  }
+
+  .rightContainer {
+    background-color: #F7F7F7;
+    margin-left: 50%;
+      p{
+        color: $graymatter;
+      }
+  }
+
+  .navtext {
+    color: white;
+    font-size: 45px;
+    font-family: "Marmelad";
+    margin-top: 40%;
+  }
+
+  .splitphoto {
+    width: 350px;
+    height: 100px;
+    opacity: 0.5;
+    position: absolute;
+    left: 5.25%;
+    top: 8.75%;
+  }

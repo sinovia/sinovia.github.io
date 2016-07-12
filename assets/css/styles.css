@@ -1,0 +1,141 @@
+@import "https://fonts.googleapis.com/css?family=Cedarville+Cursive|Marmelad";
+#bodytop,
+#bodybottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50%;
+  z-index: -250; }
+
+#bodytop {
+  top: 0;
+  background-color: #693F9B; }
+
+#bodybottom {
+  bottom: 0;
+  background-color: #60398d; }
+
+.headerName {
+  position: absolute;
+  top: 10%;
+  left: 9.5%;
+  font-size: 35px;
+  font-family: "Marmelad";
+  color: #271739;
+  z-index: 10; }
+
+.contactPill {
+  border: 2px solid #6d6971;
+  font-family: "Marmelad";
+  width: 5%;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: #6d6971;
+  position: absolute;
+  top: 10%;
+  left: 52%; }
+  .contactPill:hover {
+    background-color: #60398d;
+    color: #271739; }
+
+.aboutPill {
+  border: 2px solid #ffffff;
+  font-family: "Marmelad";
+  width: 5%;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 10%;
+  left: 41%; }
+  .aboutPill:hover {
+    background-color: #ffffff;
+    color: #271739; }
+
+.welcomePill {
+  border: 2px solid #6d6971;
+  font-family: "Marmelad";
+  width: 20%;
+  height: 5%;
+  text-align: center;
+  border-radius: 10px;
+  color: #6d6971;
+  background-color: #693F9B;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  text-align: center;
+  margin: 5px;
+  display: inline-block;
+  z-index: 10; }
+  .welcomePill p {
+    color: #F7F7F7;
+    display: inline-block;
+    font-family: "Marmelad";
+    font-weight: lighter;
+    margin: 15px;
+    font-size: 15px; }
+  .welcomePill .fa-chevron-right, .welcomePill .fa-chevron-left {
+    color: white;
+    font-size: 20px;
+    padding: 2px; }
+
+.logo {
+  top: 9.5%;
+  left: 6%;
+  height: 50px;
+  width: 50px;
+  border-radius: 80px;
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  font-family: "Cedarville Cursive";
+  background-color: #693F9B;
+  z-index: 10; }
+  .logo .initials {
+    color: white;
+    position: relative;
+    font-size: 24px;
+    top: 28%; }
+
+.leftContainer, .rightContainer {
+  width: 45%;
+  height: 800px;
+  display: inline-block;
+  margin-top: 5%;
+  text-align: center;
+  opacity: .9;
+  position: absolute; }
+  .leftContainer .fa, .rightContainer .fa {
+    color: #60398d;
+    border: 1px solid gray;
+    border-radius: 40px;
+    padding: 10px; }
+
+.leftContainer {
+  margin-left: 5%;
+  background-color: #6d6971; }
+
+.rightContainer {
+  background-color: #F7F7F7;
+  margin-left: 50%; }
+  .rightContainer p {
+    color: #6d6971; }
+
+.navtext {
+  color: white;
+  font-size: 45px;
+  font-family: "Marmelad";
+  margin-top: 40%; }
+
+.splitphoto {
+  width: 350px;
+  height: 100px;
+  opacity: 0.5;
+  position: absolute;
+  left: 5.25%;
+  top: 8.75%; }
+
+/*# sourceMappingURL=styles.css.map */
