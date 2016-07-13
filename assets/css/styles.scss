@@ -1,172 +1,146 @@
-
 @import 'https://fonts.googleapis.com/css?family=Cedarville+Cursive|Marmelad';
 
 $plum: #693F9B;
 $graymatter: #6d6971;
-$white: #ffffff;
+$tumbleweed: #DDA77B;
 $plumoffset: #60398d;
+$darkpurple: #37123C;
+$black: black;
+$white: white;
 
-#bodytop,
-	#bodybottom {
-		position: fixed;
-		left: 0;
-		right: 0;
-		height: 50%;
-    z-index: -250;
-	}
+body{
+  background-color: $black;
+}
 
-	#bodytop {
-		top: 0;
-		background-color: $plum;
-	}
+.backgroundImage{
+height: 70%;
+width: 100%;
+margin-top: 9%;
+opacity: .8;
+position: fixed;
+z-index: -10;
+}
 
-	#bodybottom {
-		bottom: 0;
-		background-color: $plumoffset;
-	}
+.heroName{
+  font-family: "Marmelad";
+  font-size: 60px;
+  color: white;
+  display: block;
+}
 
-  .headerName{
-    position: absolute;
-    top: 10%;
-    left: 9.5%;
+.devTitle{
+  color:white;
+    display: block;
+    border-radius: 40px;
+    margin-top: 1%;
+    font-family: "Marmelad";
     font-size: 35px;
-    font-family: "Marmelad";
-    color: #271739;
-      z-index: 10;
-  }
-
-.contactPill {
-  border: 2px solid $graymatter;
-    font-family: "Marmelad";
-  width: 5%;
-  padding: 1em;
-  text-align: center;
-  border-radius: 10px;
-  color: $graymatter;
-  position: absolute;
-  top: 10%;
-  left: 52%;
-      &:hover {
-        background-color: $plumoffset;
-        color: #271739;
-      }
+    padding-bottom: 1%;
 }
 
-.aboutPill {
-  border: 2px solid $white;
-    font-family: "Marmelad";
-  width: 5%;
-  padding: 1em;
-  text-align: center;
-  border-radius: 10px;
-  color: $white;
-  position: absolute;
-  top: 10%;
-  left: 41%;
-      &:hover {
-        background-color: $white;
-        color: #271739;
+.navbar {
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+      li {
+        margin: 1%;
+        width: 8em;
+        border: 1px solid $black;
+        text-align: center;
+        vertical-align: middle;
+        background-color: $plum;
+        color: white;
+        font-family: "Marmelad";
+        font-size: 25px;
       }
+    }
+
+.social-media-icons{
+  display: inline-flex;
+  font-size: 1.5em;
+
+
 }
 
-.welcomePill {
-  border: 2px solid $graymatter;
-    font-family: "Marmelad";
-  width: 20%;
-  height: 5%;
-  text-align: center;
-  border-radius: 10px;
-  color: $graymatter;
-  background-color: $plum;
+
+/* Make Header Sticky */
+#header_container {
+  background:$darkpurple;
+  height: 6%;
+  left:0;
+  position:fixed;
+  width:100%;
+  top:0;
+
+}
+
+.downcaret{
+  padding: 1em;
+  color: $darkpurple;
   position: absolute;
-  top: 50%;
-  left: 40%;
-  text-align: center;
-  margin: 5px;
-  display: inline-block;
-  z-index: 10;
-    p{
-      color: #F7F7F7;
-      display: inline-block;
-      font-family: "Marmelad";
-      font-weight: lighter;
-      margin: 15px;
-      font-size: 15px;
-    }
-
-    .fa-chevron-right, .fa-chevron-left {
-      color: white;
-      font-size: 20px;
-      padding: 2px;
-    }
-      }
-
-  .logo{
-    top: 9.5%;
-    left: 6%;
-    height: 50px;
-    width: 50px;
-    border-radius: 80px;
-    font-size: 15px;
-    position: absolute;
+  font-size: 83px;
+    margin: 0 auto;
+    width: 40%;
     text-align: center;
-    font-family: "Cedarville Cursive";
-    background-color: $plum;
-      z-index: 10;
+    display: block;
+    margin-left: 25%;
+    margin-top: 2%;
+    position: fixed;
+}
+#header{
+  margin:0 auto;
+  width:40%;
+  text-align:center;
+background-color: $darkpurple;
+  border-radius: 3px;
+  display: block;
 
-    .initials {
-      color: white;
-  position: relative;
-  font-size: 24px;
-  top: 28%;
-    }
+}
+
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#container {
+}
+#content{
+  color: white;
+}
+
+/* Make Footer Sticky */
+#footer_container {
+  background: $darkpurple;
+  bottom:0;
+  height: 8%;
+  left:0;
+  position:fixed;
+  width:100%; }
+
+#footer {
+
+  line-height:60px;
+  margin:0 auto;
+  width:40%;
+  text-align:center;
+  .fa{
+    padding: 1em;
+    color: $white;
+  }}
+
+  .upcaret{
+    padding: 1em;
+    color: $darkpurple;
+    position: fixed;
+    font-size: 83px;
+      margin: 0 auto;
+      width: 40%;
+      text-align: center;
+      display: block;
+      margin-left: 25%;
+      margin-top: 44.5%;
   }
 
-
-  .leftContainer, .rightContainer {
-
-    width: 45%;
-    height: 800px;
-    display: inline-block;
-    margin-top: 5%;
-    text-align: center;
-    opacity: .9;
-    position: absolute;
-      .fa{
-        color: $plumoffset;
-        border: 1px solid gray;
-        border-radius: 40px;
-        padding: 10px;
-      }
-  }
-
-
-
-  .leftContainer {
-    margin-left: 5%;
-    background-color: $graymatter;
-  }
-
-  .rightContainer {
-    background-color: #F7F7F7;
-    margin-left: 50%;
-      p{
-        color: $graymatter;
-      }
-  }
-
-  .navtext {
-    color: white;
-    font-size: 45px;
+  .left-brain, .right-brain{
+    color: $graymatter;
     font-family: "Marmelad";
-    margin-top: 40%;
   }
-
-  .splitphoto {
-    width: 350px;
-    height: 100px;
-    opacity: 0.5;
-    position: absolute;
-    left: 5.25%;
-    top: 8.75%;
+  .right-brain{
+    margin-left: 89%;
   }
