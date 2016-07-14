@@ -1,17 +1,30 @@
-var portfolio = angular.module("portfolio", ['ngRoute']);
+var portfolioApp = angular.module("portfolioApp", ['ngRoute']);
 
 
-portfolio.config(function($routeProvider) {
+portfolioApp.config(function($routeProvider) {
   $routeProvider
   //Consumer View Routes
     .when('/home', {
       templateUrl: 'templates/home.html',
-      controller: 'portfolioController'
+      // controller: 'ReportController'
     })
-      // .when('/contact, {
-      //   templateUrl: 'templates/contact.html',
-      //   controller: 'portfolioController'
-      //   })
+
+    .when('/contact', {
+      templateUrl: 'templates/contact.html',
+      // controller: 'ReportController'
+    })
+
+    .when('/aboutme', {
+      templateUrl: 'templates/aboutme.html',
+      // controller: 'ReportController'
+    })
+
+    .when('/work', {
+      templateUrl: 'templates/work.html',
+      // controller: 'ReportController'
+    })
+
+
       .otherwise({
         redirectTo: "/home"
 
