@@ -7,41 +7,62 @@
     <title>Test</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <script src="https://use.fontawesome.com/680855e43e.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href=assets/css/styles.css>
     <link rel="stylesheet" type="text/css" href="assets/images/brain-icons/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/images/s-icon/font/flaticon.css">
+    <script type="text/javascript" src=assets/js/pdf.js></script>
+    <script type="text/javascript" src="assets/js/resume.js"></script>
 </head>
-<body ng-app="portfolioApp">
-    <!-- BEGIN: Sticky Header -->
-    <div id="header_container">
-        <div id="header">
-            <span class=heroName><a href="#/home">{ Sinovia Mayfield }</a></span>
-            <span class="devTitle"><a href="#/home">Front-End Developer</a></span>
-            <div class=navbar>
-                <li><a href="#/aboutme">About</a></li>
-                <li><a href="#/work">Work</a></li>
-                <li><a href="#/contact">Contact</a></li>
+
+<body>
+    <div class="header">
+
+        <div class="mainContainerLeft">
+            <a href="#/home">
+                <i class="flaticon-letter-s-between-straight-parenthesis-symbol s-icon"></i>
+                <div class="headerInfo">
+                    <p class="headerName"> SINOVIA MAYFIELD</p>
+                    <p class="devTitle"> Front-end Developer</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="mainContainerRight">
+            <ul class="navBar">
+                <li> <a href="#/about">ABOUT </a></li>
+                <li> <a href="#/portfolio">PORTFOLIO</li>
+                  <li> <a href="#/testimonials">TESTIMONIALS </a></li>
+                <li> <a href="#/resume">RESUME </a> </li>
+                <li class="hire"> <a href="#/contact">CONTACT </a> </li>
+
             </ul>
         </div>
     </div>
-<ng-view></ng-view>
 
-
-    <div id="footer_container">
-              <span class="smicons">
-              <a href="https://www.linkedin.com/in/somayfield"><i class="fa smicon fa-linkedin fa-lg" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/czechosinovia"><i class="fa  smicon fa-twitter fa-lg" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/czechosinovia"><i class="fa smicon fa-instagram fa-lg" aria-hidden="true"></i></a>
-                <a href="https://github.com/sinovia"><i class="fa smicon fa-github fa-lg" aria-hidden="true"></i></a></span>
-
-<span class="phone-email">
-  <a href="mailto:somayfield@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
-    <a href="tel:+1-501-570-6295"><i class="fa fa fa-phone fa-lg" aria-hidden="true"></i></a>
-</span>
+    <div class="injectable-view" ng-app="portfolioApp">
+        <ng-view></ng-view>
     </div>
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+
+    <footer>
+      <span class="socialmedia">
+                <li><a href="https://www.linkedin.com/in/somayfield"><i class="fa smicon fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/czechosinovia"><i class="fa  smicon fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/czechosinovia"><i class="fa smicon fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/sinovia"><i class="fa smicon fa-github fa-lg" aria-hidden="true"></i></a></li>
+      </span>
+
+                <span class="phone-email">
+                  <a href="mailto:somayfield@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+                    <a href="tel:+1-501-570-6295"><i class="fa fa fa-phone fa-lg" aria-hidden="true"></i></a>
+                </span>
+      </footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-resource.min.js"></script>
     <script src="assets/js/app.js"></script>
-  </body>
+</body>
+
 </html>

@@ -1,0 +1,47 @@
+@import "https://fonts.googleapis.com/css?family=Cedarville+Cursive|Marmelad";
+body {
+  background-color: #693F9B; }
+
+header {
+  width: 100%; }
+
+.mainContainerLeft {
+  width: 45%;
+  height: 8%;
+  position: fixed;
+  padding: 1%;
+  background-color: black; }
+  .mainContainerLeft .s-icon {
+    color: white;
+    height: 40px;
+    position: fixed;
+    margin-left: 5%;
+    font-weight: lighter; }
+  .mainContainerLeft .headerInfo {
+    color: white;
+    margin-left: 20%;
+    margin-top: 0%;
+    position: relative; }
+    .mainContainerLeft .headerInfo .headerName {
+      color: #DDA77B; }
+    .mainContainerLeft .headerInfo p {
+      font-weight: lighter; }
+
+.mainContainerRight {
+  height: 8%;
+  margin-left: 47%;
+  padding: 1%;
+  background-color: black; }
+  .mainContainerRight .navBar {
+    color: white;
+    font-size: 12px; }
+    .mainContainerRight .navBar a {
+      text-decoration: none;
+      color: white; }
+    .mainContainerRight .navBar :hover {
+      border-bottom: 1px solid white; }
+  .mainContainerRight li {
+    display: inline;
+    margin: 5%; }
+
+/*# sourceMappingURL=style.css.map */

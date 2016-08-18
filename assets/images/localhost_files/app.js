@@ -20,7 +20,7 @@ portfolioApp.config(function($routeProvider) {
     })
 
     .when('/resume', {
-      templateUrl: 'templates/resume.html',
+      templateUrl: 'templates/aboutme.html',
       // controller: 'ReportController'
     })
 
