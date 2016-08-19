@@ -1,0 +1,43 @@
+.PortfolioContainer{
+  .headersubText{
+    font-size: 15px;
+    color:$white;
+    font-family: $headerfont;
+    padding-bottom: 2%;
+    i{
+      margin: 1%;
+    }
+
+  }
+.grid{
+  margin-top: 15%;
+}
+.content{
+  h3 {
+        font-family: $headerfont;
+    font-size: 25px;
+    color: $darkpurple;
+    padding: 4%;
+  }
+  p{
+    font-size: 20px;
+    color:$white;
+    font-family: $headerfont;
+    padding-bottom: 2%;
+  }
+  img {
+    width: 80%;
+    height: 60%;
+    border-radius: 2px;
+
+  }
+
+}
+.source-demo {
+  p {
+    color: $darkpurple;
+    display: inline-block;
+    padding: 4%;
+  }
+}
+}
