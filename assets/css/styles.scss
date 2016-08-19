@@ -40,7 +40,7 @@ body {
     .s-icon {
         color: $white;
         height: 40px;
-        position: fixed;
+        position: absolute;
         margin-left: 5%;
         padding-top: 0.5%;
         font-weight: lighter;
@@ -166,3 +166,4 @@ footer {
 @import "partials/home";
 @import "partials/grid";
 @import "partials/portfolio";
+@import "partials/contact";

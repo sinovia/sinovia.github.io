@@ -24,7 +24,7 @@ body {
   .mainContainerLeft .s-icon {
     color: #FAF0E6;
     height: 40px;
-    position: fixed;
+    position: absolute;
     margin-left: 5%;
     padding-top: 0.5%;
     font-weight: lighter; }
@@ -123,7 +123,7 @@ footer {
   height: 20%; }
 
 .resume {
-  margin-top: 8%; }
+  margin-top: 5%; }
 
 .homeContainer {
   height: 100%;
@@ -428,5 +428,20 @@ footer {
   color: #37123C;
   display: inline-block;
   padding: 4%; }
+
+.resume {
+  margin-top: 5%; }
+
+.grid {
+  margin-top: 25%; }
+
+.ContactContainer .content i {
+  color: #E3B23C;
+  font-size: 40px;
+  padding-bottom: 2%; }
+.ContactContainer .content h3 {
+  color: #37123C;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2%; }
 
 /*# sourceMappingURL=styles.css.map */
