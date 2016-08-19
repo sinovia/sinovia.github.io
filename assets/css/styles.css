@@ -402,6 +402,9 @@ footer {
     display: none !important;
     width: 0;
     height: 0; } }
+.PortfolioContainer a {
+  text-decoration: none;
+  color: #37123C; }
 .PortfolioContainer .headersubText {
   font-size: 15px;
   color: #FAF0E6;
@@ -414,7 +417,7 @@ footer {
 .PortfolioContainer .content h3 {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
-  color: #37123C;
+  color: #E3B23C;
   padding: 4%; }
 .PortfolioContainer .content p {
   font-size: 20px;
@@ -422,20 +425,21 @@ footer {
   font-family: "Poppins", sans-serif;
   padding-bottom: 2%; }
 .PortfolioContainer .content img {
-  width: 80%;
-  height: 60%;
+  width: 20em;
+  height: 12em;
   border-radius: 2px; }
 .PortfolioContainer .source-demo p {
   color: #37123C;
   display: inline-block;
-  padding: 4%; }
-
-.resume {
-  margin-top: 5%; }
+  padding: 2%; }
+.PortfolioContainer .source-demo p:hover {
+  border-bottom: 3px solid #E3B23C; }
 
 .grid {
   margin-top: 25%; }
 
+.ContactContainer a {
+  text-decoration: none; }
 .ContactContainer .content i {
   color: #E3B23C;
   font-size: 40px;
@@ -443,6 +447,7 @@ footer {
 .ContactContainer .content h3 {
   color: #37123C;
   font-family: "Poppins", sans-serif;
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+  padding-top: 2%; }
 
 /*# sourceMappingURL=styles.css.map */

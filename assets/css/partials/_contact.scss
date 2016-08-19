@@ -1,12 +1,13 @@
-.resume {
-  margin-top: 5%;
-}
+
 .grid{
   margin-top: 25%;
 }
 
 .ContactContainer{
 
+a{
+  text-decoration: none;
+}
   .content{
     i{
       color: $tumbleweed;
@@ -17,6 +18,7 @@
       color: $darkpurple;
       font-family: $headerfont;
       padding-bottom: 2%;
+      padding-top: 2%;
     }
 
   }
