@@ -1,5 +1,83 @@
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1224px) {
-/* Styles */
-}
+
+  .homeContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 8%;
+    height: 70%;
+    background-color: $plumoffset;
+    font-family: $headerfont;
+      color: $white;
+
+    .homeImage{
+      border: 1px solid red;
+      display: block;
+      height: 80%;
+      width:80%;
+      margin: 0 auto;
+    }
+
+      p{
+        color: $tumbleweed;
+        margin-top: 1%;
+        a{
+          color: $tumbleweed;
+        text-decoration: none;
+      }
+      }
+
+      a:hover{
+        border-bottom: 3px solid $plumoffset
+      }
+
+      h1 {
+
+        margin-top: 10%;
+
+        font-size: 35px;
+      }
+
+        ul {
+          display: inline-flex;
+          margin-top: 1%;
+            li{
+              font-family: $headerfont;
+              font-size: 20px;
+              margin-right: 15%;
+              margin-left: 15%;
+                margin-bottom: 2%;
+                i {
+                  font-size: 5px;
+                }
+            }
+        }
+
+        .angle{
+          .uparrow{
+          display: block;
+            font-size: 40px;
+        }
+        }
+
+      .mainButtons{
+        p{
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 4%;
+        padding-top: 2%;
+        font-family: $headerfont;
+        font-size: 20px;
+
+      }
+      }
+  }
+
+
+
+
+
+  }

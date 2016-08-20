@@ -4,14 +4,16 @@
 
  /* Smartphones (portrait) ----------- */
  @media only screen
- and (max-width : 480px) {
+ and (min-device-width : 320px)
+ and (max-device-width : 480px) {
   body {
     background-color: $white;
   }
 .homeContainer {
 
   .homeImage{
-    margin-top: 10%;
+    border: 1px solid gold;
+    margin-top: 5%;
     width: 100%;
     height: 40%;
   }
@@ -33,11 +35,11 @@
 
 .headerInfo{
   width: 100%;
-  left: 20%;
-  display: block;
+  left: 15%;
 
 
-  .headerName {
+p .headerName {
+
       text-align: center;
       color: $white;
       font-size: 15px;
@@ -53,4 +55,37 @@
 .navBar{
   display: none;
 }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    height: 8%;
+    background-color: $plumoffset;
+    .socialmedia {
+        i {
+            margin-top: 1%;
+            color: $white;
+            font-size: 35px;
+            padding-bottom: 4px;
+        }
+
+        li {
+            display: inline;
+            color: $white;
+            padding: 3%;
+        }
+    }
+    .phone-email {
+        i {
+            font-size: 35px;
+            color: $white;
+        }
+  padding: 3%;
+        margin-left: 40%;
+    }
+}
+
+
 }

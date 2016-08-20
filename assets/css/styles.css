@@ -454,12 +454,13 @@ footer {
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   body {
     background-color: #FAF0E6; }
 
   .homeContainer .homeImage {
-    margin-top: 10%;
+    border: 1px solid gold;
+    margin-top: 5%;
     width: 100%;
     height: 40%; }
   .homeContainer .heroSubtext li {
@@ -470,9 +471,8 @@ footer {
 
   .headerInfo {
     width: 100%;
-    left: 20%;
-    display: block; }
-    .headerInfo .headerName {
+    left: 15%; }
+    .headerInfo p .headerName {
       text-align: center;
       color: #FAF0E6;
       font-size: 15px; }
@@ -481,15 +481,133 @@ footer {
       font-size: 10px; }
 
   .navBar {
-    display: none; } }
+    display: none; }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    height: 8%;
+    background-color: #613B70; }
+    footer .socialmedia i {
+      margin-top: 1%;
+      color: #FAF0E6;
+      font-size: 35px;
+      padding-bottom: 4px; }
+    footer .socialmedia li {
+      display: inline;
+      color: #FAF0E6;
+      padding: 3%; }
+    footer .phone-email {
+      padding: 3%;
+      margin-left: 40%; }
+      footer .phone-email i {
+        font-size: 35px;
+        color: #FAF0E6; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* Styles */ }
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */ }
+  .homeContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 8%;
+    height: 70%;
+    background-color: #613B70;
+    font-family: "Poppins", sans-serif;
+    color: #FAF0E6; }
+    .homeContainer .homeImage {
+      border: 1px solid red;
+      display: block;
+      height: 80%;
+      width: 80%;
+      margin: 0 auto; }
+    .homeContainer p {
+      color: #E3B23C;
+      margin-top: 1%; }
+      .homeContainer p a {
+        color: #E3B23C;
+        text-decoration: none; }
+    .homeContainer a:hover {
+      border-bottom: 3px solid #613B70; }
+    .homeContainer h1 {
+      margin-top: 10%;
+      font-size: 35px; }
+    .homeContainer ul {
+      display: inline-flex;
+      margin-top: 1%; }
+      .homeContainer ul li {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-bottom: 2%; }
+        .homeContainer ul li i {
+          font-size: 5px; }
+    .homeContainer .angle .uparrow {
+      display: block;
+      font-size: 40px; }
+    .homeContainer .mainButtons p {
+      display: inline-block;
+      margin: 0 auto;
+      padding-left: 4%;
+      padding-top: 2%;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px; } }
 /* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */ }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background-color: #FAF0E6; }
+
+  .homeContainer .homeImage {
+    border: 1px solid green;
+    margin-top: 5%;
+    width: 100%;
+    height: 30%; }
+  .homeContainer .heroSubtext li {
+    width: 100%;
+    font-size: 18px; }
+  .homeContainer .mainButtons p {
+    display: block; }
+
+  .headerInfo {
+    width: 100%;
+    left: 15%; }
+    .headerInfo p .headerName {
+      text-align: center;
+      color: #FAF0E6;
+      font-size: 15px; }
+    .headerInfo .devTitle {
+      color: #FAF0E6;
+      font-size: 10px; }
+
+  .navBar {
+    display: none; }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    height: 8%;
+    background-color: #613B70; }
+    footer .socialmedia i {
+      margin-top: 1%;
+      color: #FAF0E6;
+      font-size: 35px;
+      padding-bottom: 4px; }
+    footer .socialmedia li {
+      display: inline;
+      color: #FAF0E6;
+      padding: 3%; }
+    footer .phone-email {
+      padding: 3%;
+      margin-left: 40%; }
+      footer .phone-email i {
+        font-size: 35px;
+        color: #FAF0E6; } }
 
 /*# sourceMappingURL=styles.css.map */
