@@ -12,7 +12,9 @@
 
   .homeImage{
     margin-top: 10%;
-    width: 100%;
+    margin-left: 5%;
+    margin-right: 25%;
+    width: 90%;
     height: 40%;
   }
 
@@ -30,27 +32,187 @@
 
 }
 
+.s-icon {
+  display: none;
+}
 
 .headerInfo{
-  width: 100%;
-  left: 20%;
-  display: block;
-
+  text-align: center;
+  position: absolute;
+  width: 175%;
+  padding-bottom: 4%;
 
   .headerName {
-      text-align: center;
+    margin-top: 4%;
+    font-size: 20px;
       color: $white;
-      font-size: 15px;
     }
 
     .devTitle{
       color: $white;
-      font-size: 10px;
+      font-size: 15px;
       }
 
 }
-
+.mainContainerRight {
 .navBar{
-  display: none;
+
+  position: absolute;
+  z-index: 1050;
+  width: 100%;
+  top: 80%;
+  left: -10%;
+  display: inline;
+    li{
+  display: inline-block;
+  font-size: 10px;
 }
+}
+}
+
+
+// Portfolio Page
+.PortfolioContainer{
+
+  body{
+    overflow: auto;
+  }
+  .col-1-3{
+    border: 1px solid $graymatter;
+  }
+
+.headerText{
+  margin-top: 10%;
+  border-left: 1px solid $tumbleweed;
+  border-right: 1px solid $tumbleweed;
+  font-size: 25px;
+  padding: 0;
+  color: $tumbleweed;
+}
+
+    a{
+      text-decoration: none;
+      color: $darkpurple;
+    }
+    .headersubText{
+      font-size: 10px;
+      color:$white;
+      font-family: $headerfont;
+      i{
+        margin: 1%;
+      }
+
+    }
+  .grid{
+    margin-top: 30%;
+      overflow: scroll;
+  }
+  .content{
+    h3 {
+          font-family: $headerfont;
+      font-size: 20px;
+      color: $tumbleweed;
+    }
+    p{
+      font-size: 20px;
+      color:$white;
+      font-family: $headerfont;
+    }
+    img {
+      width: 10em;
+      height: 6em;
+      border-radius: 2px;
+
+    }
+
+  }
+  .source-demo {
+    p {
+      color: $darkpurple;
+      display: inline-block;
+    }
+
+    p:hover{
+      border-bottom: 2px solid $tumbleweed;
+    }
+
+  }
+  }
+
+// Contact Page
+
+.ContactContainer{
+
+  body{
+    overflow: auto;
+  }
+  .col-1-3{
+    border: 1px solid $graymatter;
+  }
+
+.headerText{
+  margin-top: 10%;
+  border-left: 1px solid $tumbleweed;
+  border-right: 1px solid $tumbleweed;
+  font-size: 25px;
+  padding: 0;
+  color: $tumbleweed;
+}
+
+.grid{
+  margin-top: 45%;
+    overflow: scroll;
+}
+}
+
+// Resume Page
+.ResumeContainer{
+  .resume{
+    margin-top: 35%;
+  }
+}
+iframe{
+  width: 100%;
+
+}
+
+
+//Footer
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    height: 8%;
+    background-color: $plumoffset;
+    .socialmedia {
+        i {
+            margin-top: 1%;
+            color: $tumbleweed;
+            font-size: 35px;
+            padding-bottom: 4px;
+        }
+
+        li {
+            display: inline;
+            color: $tumbleweed;
+
+            padding: 3%;
+        }
+    }
+    .phone-email {
+        i {
+            margin-top: 1%;
+            font-size: 35px;
+            margin-left: 2%;
+            color: $tumbleweed;
+            padding: 3%;
+        }
+
+        margin-left: 35%;
+    }
+}
+
 }
