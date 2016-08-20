@@ -554,7 +554,7 @@ footer {
     overflow: scroll; }
 
   .ResumeContainer .resume {
-    margin-top: 35%; }
+    margin-top: 30%; }
 
   iframe {
     width: 100%; }
@@ -586,7 +586,34 @@ footer {
         padding: 3%; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* Styles */ }
+  body {
+    background-color: #FAF0E6; }
+
+  .homeContainer .homeImage {
+    margin-left: 5%;
+    margin-right: 25%;
+    width: 90%;
+    height: 70%; }
+
+  footer .socialmedia i {
+    color: #E3B23C;
+    font-size: 35px;
+    padding-bottom: 4px; }
+  footer .socialmedia li {
+    display: inline;
+    color: #E3B23C; }
+  footer .phone-email {
+    margin-left: 80%; }
+    footer .phone-email i {
+      font-size: 35px;
+      margin-left: 2%;
+      color: #E3B23C; }
+
+  .ResumeContainer .resume {
+    margin-top: 10%; }
+
+  iframe {
+    width: 100%; } }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */ }

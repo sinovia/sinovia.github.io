@@ -1,5 +1,61 @@
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1224px) {
-/* Styles */
+body {
+  background-color: $white;
+}
+
+.homeContainer {
+
+  .homeImage{
+    margin-left: 5%;
+    margin-right: 25%;
+    width: 90%;
+    height: 70%;
+  }
+
+
+}
+
+
+
+footer {
+
+    .socialmedia {
+        i {
+
+            color: $tumbleweed;
+            font-size: 35px;
+            padding-bottom: 4px;
+        }
+
+        li {
+            display: inline;
+            color: $tumbleweed;
+
+
+        }
+    }
+    .phone-email {
+        i {
+
+            font-size: 35px;
+            margin-left: 2%;
+            color: $tumbleweed;
+
+        }
+
+        margin-left: 80%;
+    }
+}
+.ResumeContainer{
+  .resume{
+    margin-top: 10%;
+  }
+}
+iframe{
+  width: 100%;
+
+
+}
 }
