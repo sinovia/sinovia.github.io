@@ -595,6 +595,11 @@ footer {
     width: 90%;
     height: 70%; }
 
+  .heroSubtext li {
+    margin-top: 2%;
+    width: 100%;
+    font-size: 18px; }
+
   footer .socialmedia i {
     color: #E3B23C;
     font-size: 35px;
