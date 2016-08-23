@@ -454,7 +454,7 @@ footer {
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 850px) {
   body {
     background-color: #FAF0E6; }
 
@@ -585,7 +585,7 @@ footer {
         color: #E3B23C;
         padding: 3%; } }
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 851px) {
   body {
     background-color: #FAF0E6; }
 
@@ -596,7 +596,7 @@ footer {
     height: 70%; }
 
   .heroSubtext li {
-    margin-top: 2%;
+    margin-top: 5%;
     width: 100%;
     font-size: 18px; }
 
