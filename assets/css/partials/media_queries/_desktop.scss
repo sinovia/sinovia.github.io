@@ -1,68 +1,334 @@
-/* Desktops and laptops ----------- */
-@media only screen
-and (max-width : 551px) {
+@media only screen and (min-device-width : 581px) and (max-device-width : 1600px)
+{
 body {
-  background-color: $white;
+    background-color: $white;
 }
 
 .homeContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 8%;
+  height: 75%;
+  background-color: $plumoffset;
+  font-family: $headerfont;
+    color: $white;
 
   .homeImage{
-    margin-left: 5%;
-    margin-right: 25%;
-    width: 90%;
-    height: 70%;
+    display: block;
+    height: 75%;
+    width:97%;
+    margin: 0 auto;
   }
 
+    p{
+      color: $tumbleweed;
+      margin-top: 1%;
+      a{
+        color: $tumbleweed;
+      text-decoration: none;
+    }
+    }
+
+    a:hover{
+      border-bottom: 3px solid $plumoffset
+    }
+
+    h1 {
+
+      margin-top: 10%;
+
+      font-size: 35px;
+    }
+
+      ul {
+        display: inline-flex;
+        margin-top: 1%;
+          li{
+            font-family: $headerfont;
+            font-size: 20px;
+            margin-right: 15%;
+            margin-left: 15%;
+              margin-bottom: 2%;
+              i {
+                font-size: 5px;
+              }
+          }
+      }
+
+      .angle{
+        .uparrow{
+        display: block;
+          font-size: 40px;
+      }
+      }
+
+    .mainButtons{
+      p{
+      display: inline-block;
+      margin: 0 auto;
+      padding-left: 4%;
+      padding-top: 2%;
+      font-family: $headerfont;
+      font-size: 20px;
+
+    }
+    }
+}
+
+
+header {
+  position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 0;
+    height: 8%;
+    background-color: $white;
+    position: absolute;
+    display: inline-flex;
+
 
 }
 
-.heroSubtext{
-  li{
-    margin-top:5%;
-  width: 100%;
-  font-size: 18px;
-}
-}
-
-
-footer {
-
-    .socialmedia {
-        i {
-
+.mainContainerLeft {
+    a {
+        text-decoration: none;
+    }
+    width: 50%;
+    height: 100%;
+    background-color: $plumoffset;
+    display: inline-block;
+    .s-icon {
+        color: $white;
+        height: 40px;
+        position: absolute;
+        margin-left: 5%;
+        padding-top: 0.5%;
+        font-weight: lighter;
+    }
+    .headerInfo {
+          font-family: $headerfont;
+        padding-top: 1%;
+        color: $white;
+        margin-left: 20%;
+        margin-top: 0;
+        position: relative;
+        .headerName {
             color: $tumbleweed;
-            font-size: 35px;
-            padding-bottom: 4px;
+            font-family: $titlefont;
+            font-size: 20px;
+        }
+        p {
+            font-weight: lighter;
+        }
+    }
+}
+.mainContainerRight {
+    width: 50%;
+
+    height: 100%;
+    background-color: $plumoffset;
+    display: inline-block;
+    .navBar {
+        margin-left: 40%;
+        padding-top: 3%;
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+
         }
 
         li {
+            font-family: $headerfont;
             display: inline;
-            color: $tumbleweed;
+            margin: 2%;
+            :hover {
+                border-bottom: 3px solid $tumbleweed;
+        }
+        .hire{
+          background-color: $tumbleweed;
+
+          padding: 10px;
+          }
 
 
+    }
+}
+.injectable-view {
+    text-align: center;
+    height: 100%;
+    margin: 5%;
+}
+
+.generalHead {
+position: absolute;
+left: 0;
+top: 8%;
+  width: 100%;
+  height: 15%;
+  background-color: $plumoffset;
+
+    h1 {
+      margin-top: 2%;
+      color: $white;
+      font-size: 40px;
+      font-family: $headerfont;
+    }
+    h3 {
+      color: $white;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      font-size: 15px;
+      font-weight: lighter;
+      font-family: $headerfont;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    height: 8%;
+    background-color: $plumoffset;
+    .socialmedia {
+      width: 100%;
+
+      margin-left: 25%;
+        i {
+
+            margin-top: 1%;
+            color: $white;
+            font-size: 45px;
+            padding-bottom: 4px;
+
+        }
+        i:hover {
+          color: $tumbleweed;
+
+        }
+
+
+        li {
+            display: inline;
+            color: $white;
+            padding: 5%;
         }
     }
     .phone-email {
         i {
-
-            font-size: 35px;
+            font-size: 45px;
             margin-left: 2%;
-            color: $tumbleweed;
-
+            color: $white;
         }
-
-        margin-left: 80%;
+        padding-right: 1%;
+        margin-right: 0%;
     }
 }
-.ResumeContainer{
-  .resume{
-    margin-top: 10%;
+
+.angle{
+  display: block;
+}
+
+
+
+.grid{
+  margin-top: 8%;
+
+
+}
+
+.ContactContainer{
+  .col-1-4{
+    padding-top: 0%;
+
+  }
+  border: 1px solid $white;
+    a{
+  text-decoration: none;
+}
+  .content{
+    i{
+      color: $tumbleweed;
+      font-size: 40px;
+      padding-bottom: 2%;
+    }
+
+    i:hover{
+      color: $darkpurple
+    }
+
+    h3{
+      color: $darkpurple;
+      font-family: $headerfont;
+      padding-bottom: 2%;
+      padding-top: 2%;
+    }
+
   }
 }
-iframe{
-  width: 100%;
 
+// Portfolio Page
+.PortfolioContainer{
 
+  a{
+    text-decoration: none;
+    color: $darkpurple;
+  }
+  .headersubText{
+    font-size: 15px;
+    color:$white;
+    font-family: $headerfont;
+    padding-bottom: 2%;
+    i{
+      margin: 1%;
+    }
+
+  }
+.grid{
+  margin-top: 15%;
+}
+.content{
+  h3 {
+        font-family: $headerfont;
+    font-size: 25px;
+    color: $tumbleweed;
+    padding: 4%;
+  }
+  p{
+    font-size: 20px;
+    color:$white;
+    font-family: $headerfont;
+    padding-bottom: 2%;
+  }
+  img {
+    width: 20em;
+    height: 12em;
+    border-radius: 2px;
+
+  }
+
+}
+.source-demo {
+  p {
+    color: $darkpurple;
+    display: inline-block;
+    padding: 2%;
+  }
+
+  p:hover{
+    border-bottom: 3px solid $tumbleweed;
+  }
+
+}
+}
+
+// Resume Page
+.resume {
+  margin-top: 5%;
 }
 }
