@@ -59,7 +59,7 @@
     margin-left: 8%;
     margin-right: 0 auto;
     padding-right: 0%;
-    padding-bottom: 10%; }
+    padding-bottom: 7%; }
 
   .s-icon {
     display: none;
@@ -163,7 +163,7 @@
         font-family: "Biryani", sans-serif;
         font-size: 50px;
         margin-top: 3%;
-        margin-bottom: 5%; }
+        margin-bottom: 10%; }
       .mainContainerLeft .headerInfo p {
         font-weight: lighter; }
 
@@ -173,7 +173,7 @@
     background-color: #613B70; }
     .mainContainerRight .navBar {
       position: fixed;
-      margin-top: 20%;
+      margin-top: 25%;
       margin-left: 10%; }
       .mainContainerRight .navBar a {
         text-decoration: none;
@@ -231,7 +231,7 @@
     height: 80%;
     overflow: auto; }
     .ContactContainer .grid-pad {
-      margin-top: 20%; }
+      margin-top: 25%; }
       .ContactContainer .grid-pad .generalHead {
         position: fixed;
         top: 10%;
