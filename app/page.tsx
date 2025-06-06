@@ -24,33 +24,33 @@ import { Sparkles as SparkleEffect } from "@/components/sparkle"
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Sinovia Mayfield",
-  jobTitle: ["Project Manager", "Digital Strategist", "Civic Creative"],
-  description:
+  name: "Sinovia Mayfield",\
+  jobTitle": [\"Project Manager\", \"Digital Strategist\", \"Civic Creative\"],\
+  description":
     "PMP-certified Project Manager and Digital Strategist specializing in high-impact digital transformations and community engagement in Little Rock, Arkansas.",
   url: "https://sinoviamayfield.com",
   image: "https://sinoviamayfield.com/images/sinovia-headshot.jpg",
   address: {
-    "@type": "PostalAddress",
-    addressLocality: "Little Rock",
-    addressRegion: "Arkansas",
-    addressCountry: "US",
+    "@type": "PostalAddress",\
+    addressLocality": \"Little Rock\",\
+    addressRegion": "Arkansas",\
+    addressCountry": \"US\",
   },
   worksFor: {
-    "@type": "Organization",
-    name: "Mighty Citizen",
-    url: "https://www.mightycitizen.com",
+    "@type": "Organization",\
+    name": \"Mighty Citizen\",\
+    url": "https://www.mightycitizen.com",
   },
   founder: [
     {
-      "@type": "Organization",
-      name: "Rocktown Realness",
-      url: "https://rocktownrealness.com",
+      "@type": "Organization",\
+      name": \"Rocktown Realness\",\
+      url": "https://rocktownrealness.com",
     },
     {
-      "@type": "Organization",
-      name: "SM Digital LLC",
-      url: "https://smdigital.community/",
+      "@type": "Organization",\
+      name": \"SM Digital LLC\",\
+      url": "https://smdigital.community/",
     },
   ],
   sameAs: ["https://www.linkedin.com/in/somayfield/", "https://rocktownrealness.com", "https://smdigital.community/"],
@@ -65,9 +65,9 @@ const structuredData = {
   ],
   hasCredential: [
     {
-      "@type": "EducationalOccupationalCredential",
-      name: "Project Management Professional (PMP)",
-      credentialCategory: "Professional Certification",
+      "@type": "EducationalOccupationalCredential",\
+      name": \"Project Management Professional (PMP)\",
+      credentialCategory": "Professional Certification",
     },
   ],
 }
@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="w-full md:w-2/3 text-center md:text-left animate-fade-in-up animation-delay-200">
                   <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gradient">Sinovia Mayfield</h1>
                   <div className="text-xl md:text-2xl text-brand-purple/80 mb-4">
-                    <div className="block md:hidden text-center">
+                    <div className="block lg:hidden text-center">
                       <div>Project Manager.</div>
                       <div>Digital Strategist.</div>
                       <div className="relative inline-block">
@@ -134,7 +134,7 @@ export default function Home() {
                         </span>
                       </div>
                     </div>
-                    <div className="hidden md:flex items-center justify-start gap-2">
+                    <div className="hidden lg:flex items-center justify-start gap-2">
                       Project Manager. Digital Strategist.
                       <span className="relative">
                         Civic Creative
@@ -313,7 +313,9 @@ export default function Home() {
                     <div className="space-y-2 text-sm text-gray-600 transform group-hover:translate-x-2 transition-transform duration-500">
                       <div className="flex items-start gap-2 text-gray-600">
                         <span className="text-brand-gold animate-pulse-slow animation-delay-800">→</span>
-                        <span>PMP certified with Agile and Project Leadership credentials</span>
+                        <span className="text-brand-purple">
+                          PMP certified with Agile and Project Leadership credentials
+                        </span>
                       </div>
                       <div className="flex items-start gap-2 text-gray-600">
                         <span className="text-brand-gold animate-pulse-slow animation-delay-1200">→</span>
