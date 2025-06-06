@@ -566,7 +566,7 @@ export default function Home() {
                           <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow animation-delay-800">
                             ✓
                           </span>
-                          <span>2025 Digital PM Summit (Portland, OR)</span>
+                          <span className="text-center sm:text-left">2025 Digital PM Summit (Portland, OR)</span>
                         </li>
                       </ul>
                     </div>
