@@ -123,15 +123,27 @@ export default function Home() {
                 </div>
                 <div className="w-full md:w-2/3 text-center md:text-left animate-fade-in-up animation-delay-200">
                   <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gradient">Sinovia Mayfield</h1>
-                  <p className="text-xl md:text-2xl text-brand-purple/80 mb-4 flex items-center justify-center md:justify-start gap-2">
-                    Project Manager. Digital Strategist.
-                    <span className="relative">
-                      Civic Creative
-                      <span className="absolute -top-1 -right-2 text-brand-gold animate-pulse-slow">
-                        <Sparkles className="h-4 w-4" />
+                  <div className="text-xl md:text-2xl text-brand-purple/80 mb-4">
+                    <div className="block md:hidden text-center">
+                      <div>Project Manager.</div>
+                      <div>Digital Strategist.</div>
+                      <div className="relative inline-block">
+                        Civic Creative
+                        <span className="absolute -top-1 -right-2 text-brand-gold animate-pulse-slow">
+                          <Sparkles className="h-4 w-4" />
+                        </span>
+                      </div>
+                    </div>
+                    <div className="hidden md:flex items-center justify-start gap-2">
+                      Project Manager. Digital Strategist.
+                      <span className="relative">
+                        Civic Creative
+                        <span className="absolute -top-1 -right-2 text-brand-gold animate-pulse-slow">
+                          <Sparkles className="h-4 w-4" />
+                        </span>
                       </span>
-                    </span>
-                  </p>
+                    </div>
+                  </div>
                   <p className="text-gray-700 mb-6 max-w-2xl">
                     Hi, I'm Sinovia — a connector of people, pixels, and purpose based in Little Rock, Arkansas. I lead
                     high-impact projects, build thoughtful digital spaces, and drive community-centered change. Whether
