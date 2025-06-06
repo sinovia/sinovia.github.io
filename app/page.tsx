@@ -24,33 +24,33 @@ import { Sparkles as SparkleEffect } from "@/components/sparkle"
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Sinovia Mayfield",\
-  jobTitle": [\"Project Manager\", \"Digital Strategist\", \"Civic Creative\"],\
-  description":
+  name: "Sinovia Mayfield",
+  jobTitle: ["Project Manager", "Digital Strategist", "Civic Creative"],
+  description:
     "PMP-certified Project Manager and Digital Strategist specializing in high-impact digital transformations and community engagement in Little Rock, Arkansas.",
   url: "https://sinoviamayfield.com",
   image: "https://sinoviamayfield.com/images/sinovia-headshot.jpg",
   address: {
-    "@type": "PostalAddress",\
-    addressLocality": \"Little Rock\",\
-    addressRegion": "Arkansas",\
-    addressCountry": \"US\",
+    "@type": "PostalAddress",
+    addressLocality: "Little Rock",
+    addressRegion: "Arkansas",
+    addressCountry: "US",
   },
   worksFor: {
-    "@type": "Organization",\
-    name": \"Mighty Citizen\",\
-    url": "https://www.mightycitizen.com",
+    "@type": "Organization",
+    name: "Mighty Citizen",
+    url: "https://www.mightycitizen.com",
   },
   founder: [
     {
-      "@type": "Organization",\
-      name": \"Rocktown Realness\",\
-      url": "https://rocktownrealness.com",
+      "@type": "Organization",
+      name: "Rocktown Realness",
+      url: "https://rocktownrealness.com",
     },
     {
-      "@type": "Organization",\
-      name": \"SM Digital LLC\",\
-      url": "https://smdigital.community/",
+      "@type": "Organization",
+      name: "SM Digital LLC",
+      url: "https://smdigital.community/",
     },
   ],
   sameAs: ["https://www.linkedin.com/in/somayfield/", "https://rocktownrealness.com", "https://smdigital.community/"],
@@ -65,9 +65,9 @@ const structuredData = {
   ],
   hasCredential: [
     {
-      "@type": "EducationalOccupationalCredential",\
-      name": \"Project Management Professional (PMP)\",
-      credentialCategory": "Professional Certification",
+      "@type": "EducationalOccupationalCredential",
+      name: "Project Management Professional (PMP)",
+      credentialCategory: "Professional Certification",
     },
   ],
 }
@@ -566,14 +566,7 @@ export default function Home() {
                           <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow animation-delay-800">
                             ✓
                           </span>
-                          <Link
-                            href="https://bureauofdigital.com/event/digital-pm-summit-2025"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-brand-purple hover:underline transition-all duration-200"
-                          >
-                            2025 Digital PM Summit (Portland, OR)
-                          </Link>
+                          <span>2025 Digital PM Summit (Portland, OR)</span>
                         </li>
                       </ul>
                     </div>
@@ -590,7 +583,7 @@ export default function Home() {
                   >
                     <Link href="mailto:sinovia@hey.com">
                       <Mail className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
-                      Book a conversation
+                      Request to Book
                     </Link>
                   </Button>
                 </CardFooter>
