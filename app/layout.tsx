@@ -59,7 +59,7 @@ export const metadata = {
   verification: {
     google: "your-google-verification-code", // Add your actual verification code
   },
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
