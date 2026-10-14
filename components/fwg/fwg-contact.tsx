@@ -32,10 +32,10 @@ export function FwgContact() {
           <h2 id="connect-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             {"Let\u2019s Keep the Conversation Going"}
           </h2>
-          <p className="max-w-2xl text-pretty text-lg leading-relaxed">
+          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {"The conversation doesn\u2019t have to end when the Arkansas Learning Journey does."}
           </p>
-          <p className="max-w-2xl text-pretty text-lg leading-relaxed">
+          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {
               "Whether you\u2019re interested in supporting Rocktown Realness, collaborating on a community initiative, exchanging ideas, or exploring opportunities to work together, I\u2019d love to hear from you."
             }
@@ -74,7 +74,7 @@ export function FwgContact() {
           ))}
         </ul>
 
-        <p className="border-t border-brand-purple/15 pt-8 text-xl font-semibold text-brand-purple">
+        <p className="border-t border-brand-purple/15 pt-8 text-[17px] font-semibold text-brand-purple md:text-xl">
           Small City. Big Hearts. Real Love for Little Rock.
         </p>
       </div>

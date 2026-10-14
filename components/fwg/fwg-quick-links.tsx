@@ -16,7 +16,7 @@ export function FwgQuickLinks() {
             <a
               href={href}
               {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className="flex items-center gap-3 rounded-xl border border-brand-purple/15 bg-white px-5 py-4 font-medium md:border-transparent text-[#2a1530] transition-colors hover:text-brand-purple focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-purple"
+              className="flex min-h-12 items-center gap-3 rounded-xl border border-brand-purple/15 bg-white px-5 py-3.5 text-[15px] font-medium md:py-4 md:text-base md:border-transparent text-[#2a1530] transition-colors hover:text-brand-purple focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-purple"
             >
               <Icon className="h-4 w-4 shrink-0 text-brand-purple" aria-hidden="true" />
               {label}

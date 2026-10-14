@@ -31,7 +31,7 @@ export function FwgRocktown() {
               {"What We\u2019re Building Through Rocktown Realness"}
             </h2>
           </div>
-          <div className="flex max-w-2xl flex-col gap-4 text-lg leading-relaxed">
+          <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed md:text-lg">
             <p>
               Rocktown Realness turns community connection into practical action through storytelling, direct support,
               civic engagement, and shared experiences.
@@ -51,7 +51,7 @@ export function FwgRocktown() {
                 className="flex flex-col gap-2 rounded-xl border-2 border-transparent bg-white p-5 transition-all md:p-6 duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
               >
               <h3 className="text-lg font-semibold text-brand-purple">{program.name}</h3>
-              <p className="leading-relaxed text-[#2a1530]/80">{program.body}</p>
+              <p className="text-[15px] leading-relaxed text-[#2a1530]/80 md:text-base">{program.body}</p>
             </li>
           ))}
         </ul>
@@ -79,7 +79,7 @@ export function FwgRocktown() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <p className="max-w-2xl text-pretty text-lg leading-relaxed">
+          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {
               "We\u2019re proud of what\u2019s possible through practical coordination and community generosity. And we\u2019re equally interested in what becomes possible when that work is sustainably resourced."
             }

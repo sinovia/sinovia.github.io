@@ -22,7 +22,7 @@ export function FwgAbout() {
           />
         </div>
 
-        <div className="flex flex-col gap-5 text-lg leading-relaxed">
+        <div className="flex flex-col gap-5 text-[15px] leading-relaxed md:text-lg">
           <h2 id="about-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             A Little About Me
           </h2>
@@ -43,7 +43,7 @@ export function FwgAbout() {
             </a>
             , a hyperlocal civic platform rooted in real love for Little Rock.
           </p>
-          <p className="border-l-4 border-brand-gold pl-5 text-xl font-medium text-[#2a1530]">
+          <p className="border-l-4 border-brand-gold pl-5 text-[17px] font-medium md:text-xl text-[#2a1530]">
             My work across both spaces has a common thread: connecting people, pixels, and purpose to turn good ideas
             into practical action.
           </p>

@@ -9,7 +9,7 @@ export function FwgYourStory() {
         className="absolute -left-8 bottom-24 hidden h-32 w-32 rounded-full bg-white/5 animate-pulse-slow animation-delay-1000 md:block"
         aria-hidden="true"
       />
-      <div className="relative mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 text-lg leading-relaxed md:py-28">
+      <div className="relative mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 text-[15px] leading-relaxed md:py-28 md:text-lg">
         <h2 id="your-story-heading" className="text-balance pb-4 text-4xl font-bold leading-tight md:text-5xl">
           Now You Have a Little Rock Story, <span className="text-brand-gold">Too.</span>
         </h2>
@@ -33,7 +33,7 @@ export function FwgYourStory() {
           <p className="text-pretty text-2xl font-semibold leading-snug text-brand-gold md:text-3xl">
             You now have the opportunity to help tell a more complete story about Little Rock and Arkansas.
           </p>
-          <p className="text-xl font-medium">
+          <p className="text-[17px] font-medium md:text-xl">
             {"Not by speaking for us, but by carrying what you\u2019ve learned into the conversations, institutions, and decisions you influence."}
           </p>
         </div>

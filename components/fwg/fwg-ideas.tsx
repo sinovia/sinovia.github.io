@@ -30,11 +30,11 @@ export function FwgIdeas() {
           <h2 id="ideas-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             A Few Ideas I Hope Stay With You
           </h2>
-          <p className="max-w-2xl text-pretty text-lg leading-relaxed">
+          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
             Our panel explored how narrative change moves beyond communications and becomes visible in the choices we
             make, the resources we share, and the opportunities we create.
           </p>
-          <p className="text-lg leading-relaxed">These are a few ideas that continue to guide my work.</p>
+          <p className="text-[15px] leading-relaxed md:text-lg">These are a few ideas that continue to guide my work.</p>
         </div>
 
         <ul className="flex flex-col">
@@ -43,7 +43,7 @@ export function FwgIdeas() {
               <h3 className="text-pretty text-xl font-semibold leading-snug text-[#2a1530] md:w-1/2 md:text-2xl">
                 {idea.title}
               </h3>
-              <p className="text-pretty leading-relaxed text-[#2a1530]/80 md:w-1/2">{idea.body}</p>
+              <p className="text-pretty text-[15px] leading-relaxed text-[#2a1530]/80 md:w-1/2 md:text-base">{idea.body}</p>
             </li>
           ))}
         </ul>
@@ -52,7 +52,7 @@ export function FwgIdeas() {
           <h3 className="text-balance text-3xl font-bold leading-tight text-brand-purple md:text-5xl">
             {finalIdea.title}
           </h3>
-          <p className="max-w-2xl text-pretty text-lg leading-relaxed">{finalIdea.body}</p>
+          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">{finalIdea.body}</p>
         </div>
       </div>
     </section>

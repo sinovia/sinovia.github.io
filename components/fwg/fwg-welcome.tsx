@@ -20,7 +20,7 @@ export function FwgWelcome() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex max-w-4xl flex-col gap-10 px-6 pb-10 pt-8 md:pb-14 md:pt-10">
+      <div className="relative mx-auto flex max-w-4xl flex-col gap-7 px-6 pb-10 pt-8 md:gap-10 md:pb-14 md:pt-10">
         <nav aria-label="Site" className="opacity-0 animate-fade-in-up">
           <Link
             href="/"
@@ -41,8 +41,8 @@ export function FwgWelcome() {
           </h1>
         </div>
 
-        <div className="flex max-w-2xl flex-col gap-5 text-lg leading-relaxed opacity-0 animate-fade-in-up animation-delay-400">
-          <p className="flex items-center gap-2 text-xl font-semibold text-brand-purple">
+        <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed opacity-0 animate-fade-in-up animation-delay-400 md:gap-5 md:text-lg">
+          <p className="flex items-center gap-2 text-lg font-semibold text-brand-purple md:text-xl">
             Thank you for spending time in Little Rock!
             <Sparkles className="h-5 w-5 shrink-0 text-brand-gold animate-pulse-slow" aria-hidden="true" />
           </p>
@@ -62,16 +62,17 @@ export function FwgWelcome() {
         <div className="flex flex-col gap-3 opacity-0 animate-fade-in-up animation-delay-600 sm:flex-row">
           <a
             href="mailto:speak@rocktownrealness.com"
-            className="btn-playful inline-flex items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#6a2874] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
+            className="btn-playful inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#6a2874] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
           >
             <Mail className="h-4 w-4" aria-hidden="true" />
-            {"Let\u2019s Stay Connected"}
+            <span className="md:hidden">Email Sinovia</span>
+            <span className="hidden md:inline">{"Let\u2019s Stay Connected"}</span>
           </a>
           <a
             href="https://rocktownrealness.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-playful inline-flex items-center justify-center gap-2 rounded-full border-2 border-brand-purple px-6 py-3 font-semibold text-brand-purple transition-all duration-300 hover:scale-105 hover:bg-brand-purple/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
+            className="btn-playful inline-flex min-h-12 items-center justify-center gap-2 rounded-full border-2 border-brand-purple px-6 py-3 font-semibold text-brand-purple transition-all duration-300 hover:scale-105 hover:bg-brand-purple/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
           >
             Explore Rocktown Realness
             <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
