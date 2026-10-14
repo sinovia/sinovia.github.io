@@ -23,7 +23,7 @@ export function FwgOpportunities() {
     <section id="opportunities" aria-labelledby="opportunities-heading" className="scroll-mt-6 bg-[#f3eaf5]">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
         <div className="flex flex-col gap-4">
-          <h2 id="opportunities-heading" className="text-3xl font-bold text-brand-purple md:text-4xl">
+          <h2 id="opportunities-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             What Would Help Us Grow
           </h2>
           <p className="max-w-2xl text-pretty text-lg leading-relaxed">
@@ -34,8 +34,14 @@ export function FwgOpportunities() {
 
         <div className="grid gap-4 md:grid-cols-3">
           {areas.map((area) => (
-            <div key={area.title} className="flex flex-col gap-3 rounded-xl bg-white p-6">
-              <span className="h-1 w-10 rounded-full bg-brand-gold" aria-hidden="true" />
+            <div
+              key={area.title}
+              className="group flex flex-col gap-3 rounded-xl border-2 border-transparent bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
+            >
+              <span
+                className="h-1 w-10 rounded-full bg-brand-gold transition-all duration-500 group-hover:w-16"
+                aria-hidden="true"
+              />
               <h3 className="text-xl font-semibold text-brand-purple">{area.title}</h3>
               <p className="leading-relaxed text-[#2a1530]/80">{area.body}</p>
             </div>
@@ -50,7 +56,7 @@ export function FwgOpportunities() {
           </p>
           <a
             href={mailto}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-colors hover:bg-[#6a2874] sm:w-fit"
+            className="btn-playful inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#6a2874] sm:w-fit"
           >
             <Mail className="h-4 w-4" aria-hidden="true" />
             {"Let\u2019s Explore What\u2019s Possible"}

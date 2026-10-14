@@ -27,7 +27,7 @@ export function FwgRocktown() {
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-4">
             <Image src="/images/rocktown-realness-logo.png" alt="" width={48} height={48} className="shrink-0" />
-            <h2 id="rocktown-heading" className="text-balance text-3xl font-bold text-brand-purple md:text-4xl">
+            <h2 id="rocktown-heading" className="text-balance text-3xl font-bold text-gradient md:text-4xl">
               {"What We\u2019re Building Through Rocktown Realness"}
             </h2>
           </div>
@@ -46,7 +46,10 @@ export function FwgRocktown() {
 
         <ul className="grid gap-4 sm:grid-cols-2">
           {programs.map((program) => (
-            <li key={program.name} className="flex flex-col gap-2 rounded-xl bg-white p-6">
+            <li
+                key={program.name}
+                className="flex flex-col gap-2 rounded-xl border-2 border-transparent bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
+              >
               <h3 className="text-lg font-semibold text-brand-purple">{program.name}</h3>
               <p className="leading-relaxed text-[#2a1530]/80">{program.body}</p>
             </li>
@@ -85,7 +88,7 @@ export function FwgRocktown() {
             href="https://rocktownrealness.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-colors hover:bg-[#6a2874] sm:w-fit"
+            className="btn-playful inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#6a2874] sm:w-fit"
           >
             Explore Rocktown Realness
             <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

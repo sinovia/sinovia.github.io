@@ -5,18 +5,25 @@ export function FwgAbout() {
   return (
     <section id="about" aria-labelledby="about-heading" className="scroll-mt-6 border-t border-brand-purple/15">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:flex-row md:items-start md:gap-14 md:py-20">
-        <div className="relative aspect-square w-40 shrink-0 overflow-hidden rounded-full border-4 border-brand-gold md:w-56">
-          <Image
-            src="/images/sinovia-headshot.jpg"
-            alt="Portrait of Sinovia Mayfield"
-            fill
-            sizes="(max-width: 768px) 160px, 224px"
-            className="object-cover"
+        <div className="relative w-40 shrink-0 md:w-56">
+          <div className="relative aspect-square w-full overflow-hidden rounded-full border-4 border-brand-gold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="absolute inset-0 z-10 bg-gradient-to-br from-brand-purple/10 to-brand-gold/10" aria-hidden="true" />
+            <Image
+              src="/images/sinovia-headshot.jpg"
+              alt="Portrait of Sinovia Mayfield"
+              fill
+              sizes="(max-width: 768px) 160px, 224px"
+              className="object-cover"
+            />
+          </div>
+          <div
+            className="absolute -bottom-2 -right-2 h-10 w-10 rounded-full bg-brand-gold/30 animate-pulse-slow"
+            aria-hidden="true"
           />
         </div>
 
         <div className="flex flex-col gap-5 text-lg leading-relaxed">
-          <h2 id="about-heading" className="text-3xl font-bold text-brand-purple md:text-4xl">
+          <h2 id="about-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             A Little About Me
           </h2>
           <p>

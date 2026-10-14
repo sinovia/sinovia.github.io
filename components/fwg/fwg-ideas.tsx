@@ -27,7 +27,7 @@ export function FwgIdeas() {
     <section id="ideas" aria-labelledby="ideas-heading" className="scroll-mt-6">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
         <div className="flex flex-col gap-4">
-          <h2 id="ideas-heading" className="text-3xl font-bold text-brand-purple md:text-4xl">
+          <h2 id="ideas-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             A Few Ideas I Hope Stay With You
           </h2>
           <p className="max-w-2xl text-pretty text-lg leading-relaxed">

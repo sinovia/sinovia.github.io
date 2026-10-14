@@ -29,7 +29,7 @@ export function FwgContact() {
     <section id="connect" aria-labelledby="connect-heading" className="scroll-mt-6">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
         <div className="flex flex-col gap-4">
-          <h2 id="connect-heading" className="text-3xl font-bold text-brand-purple md:text-4xl">
+          <h2 id="connect-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             {"Let\u2019s Keep the Conversation Going"}
           </h2>
           <p className="max-w-2xl text-pretty text-lg leading-relaxed">
@@ -59,7 +59,7 @@ export function FwgContact() {
               <a
                 href={href}
                 {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="flex items-center gap-3 rounded-xl border border-brand-purple/20 p-4 transition-colors hover:border-brand-purple"
+                className="group flex items-center gap-3 rounded-xl border border-brand-purple/20 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-purple hover:shadow-md"
               >
                 <Icon className="h-5 w-5 shrink-0 text-brand-purple" aria-hidden="true" />
                 <span className="flex min-w-0 flex-col">

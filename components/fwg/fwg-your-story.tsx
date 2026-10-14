@@ -1,7 +1,15 @@
 export function FwgYourStory() {
   return (
-    <section id="your-story" aria-labelledby="your-story-heading" className="scroll-mt-6 bg-brand-purple text-white">
-      <div className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 text-lg leading-relaxed md:py-28">
+    <section id="your-story" aria-labelledby="your-story-heading" className="relative scroll-mt-6 overflow-hidden bg-brand-purple text-white">
+      <div
+        className="absolute -right-6 top-16 h-24 w-24 rounded-full bg-brand-gold/15 animate-pulse-slow"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute -left-8 bottom-24 h-32 w-32 rounded-full bg-white/5 animate-pulse-slow animation-delay-1000"
+        aria-hidden="true"
+      />
+      <div className="relative mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 text-lg leading-relaxed md:py-28">
         <h2 id="your-story-heading" className="text-balance pb-4 text-4xl font-bold leading-tight md:text-5xl">
           Now You Have a Little Rock Story, <span className="text-brand-gold">Too.</span>
         </h2>
