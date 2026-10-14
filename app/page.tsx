@@ -533,35 +533,40 @@ export default function Home() {
                     <div className="transform group-hover:translate-x-2 transition-transform duration-300">
                       <h4 className="font-semibold text-brand-purple mb-2 flex items-center gap-2">
                         <Target className="h-4 w-4" />
-                        Recent & Upcoming:
+                        Selected Speaking Engagements & Workshops
                       </h4>
-                      <ul className="space-y-1 text-sm text-gray-600">
-                        <li className="flex items-start gap-2 text-gray-600">
-                          <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow">
-                            ✓
-                          </span>
-                          <span>ROCK Academy Graduation & Little Rock City Hall</span>
-                        </li>
-                        <li className="flex items-start gap-2 text-gray-600">
-                          <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow animation-delay-400">
-                            ✓
-                          </span>
-                          <span>AI for productivity workshops in nonprofit spaces</span>
-                        </li>
-                        <li className="flex items-start gap-2 text-gray-600">
-                          <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow animation-delay-800">
-                            ✓
-                          </span>
+                      <div className="space-y-3 text-sm text-gray-600">
+                        <article className="rounded-lg border border-brand-gold/30 bg-white/60 p-3">
+                          <p className="font-semibold text-brand-purple">Fueling the Narrative: Changing the Story to Change the Future</p>
+                          <p className="mt-1 text-xs font-medium text-brand-purple/70">October 2026 | Arkansas Learning Journey</p>
+                          <p className="mt-1 text-xs">Funders Working Group for Racial Justice and Health Equity · Little Rock, Arkansas</p>
+                          <p className="mt-2 text-xs">Panelist discussing narrative change, community storytelling, civic engagement, and turning community values into meaningful action.</p>
                           <Link
-                            href="https://bureauofdigital.com/event/digital-pm-summit-2025"
+                            href="https://sinoviamayfield.com/fwg"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-brand-purple hover:underline transition-all duration-200"
+                            className="mt-2 inline-block text-xs font-semibold text-brand-purple hover:underline"
                           >
-                            2025 Digital PM Summit (Portland, OR)
+                            Learn more at FWG →
                           </Link>
-                        </li>
-                      </ul>
+                        </article>
+                        <article className="rounded-lg border border-brand-gold/30 bg-white/60 p-3">
+                          <p className="font-semibold text-brand-purple">Soft Skills & Hard Deadlines: Managing Projects with Logic & Heart</p>
+                          <p className="mt-1 text-xs font-medium text-brand-purple/70">October 2025 | Digital PM Summit</p>
+                          <p className="mt-1 text-xs">Portland, Oregon</p>
+                          <p className="mt-2 text-xs">Speaker exploring the intersection of human-centered leadership, emotional intelligence, and effective project management.</p>
+                        </article>
+                        <ul className="space-y-1">
+                          <li className="flex items-start gap-2">
+                            <span className="text-brand-gold">✓</span>
+                            <span>ROCK Academy Graduation & Little Rock City Hall</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-brand-gold">✓</span>
+                            <span>AI for productivity workshops in nonprofit spaces</span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div className="bg-white/50 rounded-lg p-3 group-hover:bg-white/80 transition-all duration-300 border border-brand-gold/20">
                       <h4 className="font-semibold text-brand-purple mb-1 text-sm">Available For:</h4>
