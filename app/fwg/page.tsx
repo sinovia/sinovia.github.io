@@ -39,8 +39,8 @@ export default function FwgPage() {
       <FwgHero />
       <FwgAbout />
       <FwgMural />
-      <FwgIdeas />
       <FwgWork />
+      <FwgIdeas />
       <FwgGrowth />
       <FwgContact />
     </main>
