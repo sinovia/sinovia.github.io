@@ -24,13 +24,26 @@ export function FwgRocktown() {
   return (
     <section id="rocktown" aria-labelledby="rocktown-heading" className="scroll-mt-6 bg-[#f3eaf5]">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 md:px-10 md:py-20 lg:px-16">
-        <div className="flex flex-col gap-5">
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <Image src="/images/rocktown-realness-logo.png" alt="" width={48} height={48} className="shrink-0" />
+        <div className="flex flex-col gap-8 md:flex-row-reverse md:items-center md:justify-between md:gap-12">
+          <div className="relative w-28 shrink-0 sm:w-36 md:w-48 lg:w-56">
+            <div
+              className="absolute -inset-2 rounded-full border-2 border-dashed border-brand-gold/60 animate-spin-slow md:-inset-3"
+              aria-hidden="true"
+            />
+            <div className="relative aspect-square overflow-hidden rounded-full shadow-playful animate-float">
+              <Image
+                src="/images/rocktown-realness-logo.png"
+                alt="Rocktown Realness logo: a raised fist holding a sunflower inside a purple circle"
+                fill
+                sizes="(min-width: 1024px) 224px, (min-width: 768px) 192px, (min-width: 640px) 144px, 112px"
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-5">
             <h2 id="rocktown-heading" className="text-balance text-3xl font-bold text-gradient md:text-4xl">
               {"What We\u2019re Building Through Rocktown Realness"}
             </h2>
-          </div>
           <div className="flex max-w-3xl flex-col gap-4 text-[15px] leading-relaxed md:text-lg">
             <p>
               Rocktown Realness turns community connection into practical action through storytelling, direct support,
@@ -41,6 +54,7 @@ export function FwgRocktown() {
                 "Our work is grounded in the belief that Little Rock is rich in people, talent, resources, relationships, and possibilities. We\u2019re interested in building the capacity to connect those things in ways that make life better for our neighbors."
               }
             </p>
+          </div>
           </div>
         </div>
 
