@@ -12,11 +12,11 @@ export function FwgWelcome() {
       className="relative scroll-mt-6 overflow-hidden bg-gradient-to-b from-purple-50 to-[#fbf8fc]"
     >
       <div
-        className="absolute right-6 top-24 h-16 w-16 rounded-full bg-brand-gold/20 animate-pulse-slow md:right-20"
+        className="absolute right-20 top-24 hidden h-16 w-16 rounded-full bg-brand-gold/20 animate-pulse-slow md:block"
         aria-hidden="true"
       />
       <div
-        className="absolute left-4 top-[28rem] h-24 w-24 rounded-full bg-brand-purple/10 animate-pulse-slow animation-delay-1000 md:left-12"
+        className="absolute left-12 top-[28rem] hidden h-24 w-24 rounded-full bg-brand-purple/10 animate-pulse-slow animation-delay-1000 md:block"
         aria-hidden="true"
       />
 
@@ -103,7 +103,7 @@ export function FwgWelcome() {
         </figcaption>
       </figure>
 
-      <div className="relative mx-auto max-w-4xl px-6 pb-16 pt-10 md:pb-20">
+      <div className="relative mx-auto max-w-4xl px-6 pb-16 pt-8 md:pb-20 md:pt-10">
         <FwgQuickLinks />
       </div>
     </section>

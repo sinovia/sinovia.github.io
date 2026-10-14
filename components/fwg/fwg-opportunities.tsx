@@ -36,7 +36,7 @@ export function FwgOpportunities() {
           {areas.map((area) => (
             <div
               key={area.title}
-              className="group flex flex-col gap-3 rounded-xl border-2 border-transparent bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
+              className="group flex flex-col gap-3 rounded-xl border-2 border-transparent bg-white p-5 transition-all md:p-6 duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
             >
               <span
                 className="h-1 w-10 rounded-full bg-brand-gold transition-all duration-500 group-hover:w-16"

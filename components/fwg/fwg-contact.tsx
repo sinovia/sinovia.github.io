@@ -44,13 +44,15 @@ export function FwgContact() {
 
         <a
           href="mailto:speak@rocktownrealness.com"
-          className="flex flex-col gap-1 rounded-xl bg-brand-gold p-6 text-[#2a1530] transition-transform hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0 md:p-8"
+          className="flex flex-col gap-1 rounded-xl bg-brand-gold p-5 text-[#2a1530] transition-transform hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0 md:p-8"
         >
           <span className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em]">
             <Mail className="h-4 w-4" aria-hidden="true" />
             Email
           </span>
-          <span className="break-all text-2xl font-bold md:text-3xl">speak@rocktownrealness.com</span>
+          <span className="text-xl font-bold [overflow-wrap:anywhere] sm:text-2xl md:text-3xl">
+            speak@<wbr />rocktownrealness.com
+          </span>
         </a>
 
         <ul className="grid gap-3 sm:grid-cols-3">
@@ -59,7 +61,7 @@ export function FwgContact() {
               <a
                 href={href}
                 {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="group flex items-center gap-3 rounded-xl border border-brand-purple/20 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-purple hover:shadow-md"
+                className="group flex items-center gap-3 rounded-xl border border-brand-purple/20 px-5 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-purple hover:shadow-md"
               >
                 <Icon className="h-5 w-5 shrink-0 text-brand-purple" aria-hidden="true" />
                 <span className="flex min-w-0 flex-col">

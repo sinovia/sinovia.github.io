@@ -25,7 +25,7 @@ export function FwgRocktown() {
     <section id="rocktown" aria-labelledby="rocktown-heading" className="scroll-mt-6 bg-[#f3eaf5]">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Image src="/images/rocktown-realness-logo.png" alt="" width={48} height={48} className="shrink-0" />
             <h2 id="rocktown-heading" className="text-balance text-3xl font-bold text-gradient md:text-4xl">
               {"What We\u2019re Building Through Rocktown Realness"}
@@ -48,7 +48,7 @@ export function FwgRocktown() {
           {programs.map((program) => (
             <li
                 key={program.name}
-                className="flex flex-col gap-2 rounded-xl border-2 border-transparent bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
+                className="flex flex-col gap-2 rounded-xl border-2 border-transparent bg-white p-5 transition-all md:p-6 duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
               >
               <h3 className="text-lg font-semibold text-brand-purple">{program.name}</h3>
               <p className="leading-relaxed text-[#2a1530]/80">{program.body}</p>
@@ -56,7 +56,7 @@ export function FwgRocktown() {
           ))}
         </ul>
 
-        <div className="flex flex-col gap-5 rounded-xl bg-brand-gold p-6 text-[#2a1530] md:p-10">
+        <div className="flex flex-col gap-5 rounded-xl bg-brand-gold p-5 text-[#2a1530] md:p-10">
           <h3 className="text-sm font-semibold uppercase tracking-[0.2em]">Feed Our Folks: impact snapshot</h3>
           <dl className="flex flex-col gap-6 sm:flex-row sm:gap-12">
             <div className="flex flex-col-reverse gap-1 sm:w-1/2">

@@ -9,14 +9,14 @@ const links = [
 
 export function FwgQuickLinks() {
   return (
-    <nav aria-label="Quick links" className="flex flex-col gap-4 rounded-xl bg-[#f3eaf5] p-5 md:p-6">
-      <ul className="grid gap-2 sm:grid-cols-2">
+    <nav aria-label="Quick links" className="flex flex-col gap-5 md:rounded-xl md:bg-[#f3eaf5] md:p-6">
+      <ul className="grid gap-3 sm:grid-cols-2">
         {links.map(({ label, href, icon: Icon, external }) => (
           <li key={label}>
             <a
               href={href}
               {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className="flex items-center gap-3 rounded-lg bg-white px-4 py-3 font-medium text-[#2a1530] transition-colors hover:text-brand-purple focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-purple"
+              className="flex items-center gap-3 rounded-xl border border-brand-purple/15 bg-white px-5 py-4 font-medium md:border-transparent text-[#2a1530] transition-colors hover:text-brand-purple focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-purple"
             >
               <Icon className="h-4 w-4 shrink-0 text-brand-purple" aria-hidden="true" />
               {label}

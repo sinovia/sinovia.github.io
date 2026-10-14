@@ -2,11 +2,11 @@ export function FwgYourStory() {
   return (
     <section id="your-story" aria-labelledby="your-story-heading" className="relative scroll-mt-6 overflow-hidden bg-brand-purple text-white">
       <div
-        className="absolute -right-6 top-16 h-24 w-24 rounded-full bg-brand-gold/15 animate-pulse-slow"
+        className="absolute -right-6 top-16 hidden h-24 w-24 rounded-full bg-brand-gold/15 animate-pulse-slow md:block"
         aria-hidden="true"
       />
       <div
-        className="absolute -left-8 bottom-24 h-32 w-32 rounded-full bg-white/5 animate-pulse-slow animation-delay-1000"
+        className="absolute -left-8 bottom-24 hidden h-32 w-32 rounded-full bg-white/5 animate-pulse-slow animation-delay-1000 md:block"
         aria-hidden="true"
       />
       <div className="relative mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 text-lg leading-relaxed md:py-28">
@@ -29,7 +29,7 @@ export function FwgYourStory() {
           }
         </p>
 
-        <div className="my-6 flex flex-col gap-4 border-l-4 border-brand-gold pl-6">
+        <div className="my-4 flex flex-col gap-4 border-l-4 border-brand-gold pl-5 md:my-6 md:pl-6">
           <p className="text-pretty text-2xl font-semibold leading-snug text-brand-gold md:text-3xl">
             You now have the opportunity to help tell a more complete story about Little Rock and Arkansas.
           </p>
