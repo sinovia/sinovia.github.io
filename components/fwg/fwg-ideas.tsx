@@ -25,12 +25,12 @@ const finalIdea = {
 export function FwgIdeas() {
   return (
     <section id="ideas" aria-labelledby="ideas-heading" className="scroll-mt-6">
-      <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 md:px-10 md:py-20 lg:px-16">
         <div className="flex flex-col gap-4">
           <h2 id="ideas-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             A Few Ideas I Hope Stay With You
           </h2>
-          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
+          <p className="max-w-3xl text-pretty text-[15px] leading-relaxed md:text-lg">
             Our panel explored how narrative change moves beyond communications and becomes visible in the choices we
             make, the resources we share, and the opportunities we create.
           </p>
@@ -52,7 +52,7 @@ export function FwgIdeas() {
           <h3 className="text-balance text-3xl font-bold leading-tight text-brand-purple md:text-5xl">
             {finalIdea.title}
           </h3>
-          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">{finalIdea.body}</p>
+          <p className="max-w-3xl text-pretty text-[15px] leading-relaxed md:text-lg">{finalIdea.body}</p>
         </div>
       </div>
     </section>

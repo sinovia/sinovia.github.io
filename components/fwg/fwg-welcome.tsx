@@ -21,7 +21,7 @@ export function FwgWelcome() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex max-w-4xl flex-col gap-7 px-6 pb-10 pt-8 md:gap-10 md:pb-14 md:pt-10">
+      <div className="relative mx-auto flex max-w-7xl flex-col gap-6 px-6 pb-10 pt-6 md:gap-8 md:px-10 lg:px-16 md:pb-14 md:pt-8">
         <nav aria-label="Site" className="opacity-0 animate-fade-in-up">
           <Link
             href="/"
@@ -31,33 +31,65 @@ export function FwgWelcome() {
           </Link>
         </nav>
 
-        <div className="flex flex-col gap-6 opacity-0 animate-fade-in-up animation-delay-200">
-          <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-purple">
-            <MapPin className="h-4 w-4 text-brand-gold animate-float" aria-hidden="true" />
-            {"Arkansas Learning Journey \u00b7 October 2026"}
-          </p>
-          <h1 id="welcome-heading" className="text-balance text-4xl font-bold leading-tight text-[#2a1530] md:text-6xl">
-            Real Love for Little Rock.{" "}
-            <span className="text-gradient">A Conversation Worth Continuing.</span>
-          </h1>
-        </div>
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:gap-12 lg:gap-16">
+          <div className="flex flex-col gap-5 md:flex-1 md:gap-6">
+            <div className="flex flex-col gap-3 opacity-0 animate-fade-in-up animation-delay-200 md:gap-4">
+              <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-purple sm:text-sm">
+                <MapPin className="h-4 w-4 shrink-0 text-brand-gold animate-float" aria-hidden="true" />
+                {"Arkansas Learning Journey \u00b7 October 2026"}
+              </p>
+              <h1
+                id="welcome-heading"
+                className="flex flex-col gap-1 text-4xl font-bold leading-tight text-[#2a1530] md:text-5xl lg:text-6xl"
+              >
+                <span className="text-balance">Real Love for Little Rock.</span>
+                <span className="text-gradient text-balance">A Conversation Worth Continuing.</span>
+              </h1>
+            </div>
 
-        <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed opacity-0 animate-fade-in-up animation-delay-400 md:gap-5 md:text-lg">
-          <p className="flex items-center gap-2 text-lg font-semibold text-brand-purple md:text-xl">
-            Thank you for spending time in Little Rock!
-            <Sparkles className="h-5 w-5 shrink-0 text-brand-gold animate-pulse-slow" aria-hidden="true" />
-          </p>
-          <p>
-            {"I\u2019m Sinovia Mayfield, a digital transformation leader, civic creative, and the human behind Rocktown Realness."}
-          </p>
-          <p>
-            It was a pleasure participating in{" "}
-            <em className="font-medium">Fueling the Narrative: Changing the Story to Change the Future</em>.{" "}
-            {
-              "I\u2019m grateful for the opportunity to share some of our work, offer a local perspective, and learn from people thinking deeply about narrative, power, and community investment."
-            }
-          </p>
-          <p>I hope our conversation continues well beyond your visit.</p>
+            <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed opacity-0 animate-fade-in-up animation-delay-400 md:gap-5 md:text-lg">
+              <p className="flex items-center gap-2 text-lg font-semibold text-brand-purple md:text-xl">
+                Thank you for spending time in Little Rock!
+                <Sparkles className="h-5 w-5 shrink-0 text-brand-gold animate-pulse-slow" aria-hidden="true" />
+              </p>
+              <p>
+                {"I\u2019m Sinovia Mayfield, a digital transformation leader, civic creative, and the human behind Rocktown Realness."}
+              </p>
+              <p>
+                It was a pleasure participating in{" "}
+                <em className="font-medium">Fueling the Narrative: Changing the Story to Change the Future</em>.{" "}
+                {
+                  "I\u2019m grateful for the opportunity to share some of our work, offer a local perspective, and learn from people thinking deeply about narrative, power, and community investment."
+                }
+              </p>
+              <p>I hope our conversation continues well beyond your visit.</p>
+            </div>
+          </div>
+
+          <div className="relative w-full max-w-sm self-center opacity-0 animate-fade-in-right animation-delay-400 md:w-2/5 md:max-w-md md:shrink-0">
+            <div
+              className="absolute -right-3 -top-3 h-12 w-12 rounded-full bg-brand-gold/30 animate-pulse-slow"
+              aria-hidden="true"
+            />
+            <div
+              className="absolute -bottom-3 -left-3 h-16 w-16 rounded-full bg-brand-purple/15 animate-pulse-slow animation-delay-800"
+              aria-hidden="true"
+            />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-playful">
+              <Image
+                src="/images/sinovia-chair.jpg"
+                alt="Sinovia Mayfield seated in a chair, smiling"
+                fill
+                priority
+                sizes="(min-width: 768px) 40vw, (min-width: 640px) 384px, 100vw"
+                className="object-cover object-center"
+              />
+            </div>
+            <Star
+              className="absolute -right-1 bottom-6 h-6 w-6 fill-brand-gold text-brand-gold animate-pulse-slow"
+              aria-hidden="true"
+            />
+          </div>
         </div>
 
         <div className="opacity-0 animate-fade-in-up animation-delay-600">
@@ -69,7 +101,7 @@ export function FwgWelcome() {
         <FwgYourStory />
       </div>
 
-      <figure className="relative mx-auto flex max-w-6xl flex-col opacity-0 animate-fade-in-up animation-delay-800 md:px-6">
+      <figure className="relative mx-auto flex max-w-7xl flex-col opacity-0 animate-fade-in-up animation-delay-800 md:px-6">
         <div className="relative">
           <div className="relative aspect-[2048/719] w-full overflow-hidden md:rounded-xl md:shadow-playful">
             <Image

@@ -9,7 +9,7 @@ export function FwgYourStory() {
         className="absolute -left-8 bottom-24 hidden h-32 w-32 rounded-full bg-white/5 animate-pulse-slow animation-delay-1000 md:block"
         aria-hidden="true"
       />
-      <div className="relative mx-auto flex max-w-3xl flex-col gap-6 px-6 py-20 text-[15px] leading-relaxed md:py-28 md:text-lg">
+      <div className="relative mx-auto flex max-w-5xl flex-col gap-6 px-6 py-20 md:px-10 text-[15px] leading-relaxed md:py-28 md:text-lg">
         <h2 id="your-story-heading" className="text-balance pb-4 text-4xl font-bold leading-tight md:text-5xl">
           Now You Have a Little Rock Story, <span className="text-brand-gold">Too.</span>
         </h2>

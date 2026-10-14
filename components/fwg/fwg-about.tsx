@@ -4,7 +4,7 @@ import { Linkedin } from "lucide-react"
 export function FwgAbout() {
   return (
     <section id="about" aria-labelledby="about-heading" className="scroll-mt-6 border-t border-brand-purple/15">
-      <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:flex-row md:items-start md:gap-14 md:py-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 md:flex-row md:items-start md:gap-16 md:px-10 md:py-20 lg:px-16">
         <div className="relative w-40 shrink-0 md:w-56">
           <div className="relative aspect-square w-full overflow-hidden rounded-full border-4 border-brand-gold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <div className="absolute inset-0 z-10 bg-gradient-to-br from-brand-purple/10 to-brand-gold/10" aria-hidden="true" />
