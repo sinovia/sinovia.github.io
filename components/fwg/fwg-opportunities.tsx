@@ -21,12 +21,12 @@ const mailto =
 export function FwgOpportunities() {
   return (
     <section id="opportunities" aria-labelledby="opportunities-heading" className="scroll-mt-6 bg-[#f3eaf5]">
-      <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 md:px-10 md:py-20 lg:px-16">
         <div className="flex flex-col gap-4">
           <h2 id="opportunities-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             What Would Help Us Grow
           </h2>
-          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
+          <p className="max-w-3xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {"We\u2019re interested in relationships and investments that help strengthen the work we\u2019re already doing."}
           </p>
           <p className="text-[15px] leading-relaxed md:text-lg">Three areas are especially important.</p>
@@ -49,7 +49,7 @@ export function FwgOpportunities() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <p className="max-w-3xl text-pretty text-[17px] font-medium leading-relaxed md:text-xl text-[#2a1530]">
+          <p className="max-w-4xl text-pretty text-[17px] font-medium leading-relaxed md:text-xl text-[#2a1530]">
             {
               "We\u2019re not looking to make everything bigger for the sake of growth. We\u2019re interested in making meaningful work more sustainable, accessible, and effective."
             }

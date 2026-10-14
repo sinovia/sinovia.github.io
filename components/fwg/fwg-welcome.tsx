@@ -21,7 +21,7 @@ export function FwgWelcome() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex max-w-5xl flex-col gap-7 px-6 pb-10 pt-8 md:gap-10 md:pb-14 md:pt-10">
+      <div className="relative mx-auto flex max-w-7xl flex-col gap-7 px-6 pb-10 pt-8 md:gap-10 md:px-10 lg:px-16 md:pb-14 md:pt-10">
         <nav aria-label="Site" className="opacity-0 animate-fade-in-up">
           <Link
             href="/"
@@ -32,7 +32,7 @@ export function FwgWelcome() {
         </nav>
 
         <div className="flex flex-col gap-8 md:flex-row-reverse md:items-center md:justify-between md:gap-12">
-          <div className="relative w-32 shrink-0 self-start opacity-0 animate-fade-in-right sm:w-40 md:w-56 md:self-center lg:w-72">
+          <div className="relative w-32 shrink-0 self-start opacity-0 animate-fade-in-right sm:w-40 md:w-56 md:self-center lg:w-72 xl:w-96">
             <div
               className="absolute -inset-3 rounded-full border-2 border-dashed border-brand-gold/60 animate-spin-slow md:-inset-4"
               aria-hidden="true"
@@ -43,7 +43,7 @@ export function FwgWelcome() {
                 alt="Rocktown Realness logo: a raised fist holding a sunflower inside a purple circle"
                 fill
                 priority
-                sizes="(min-width: 1024px) 288px, (min-width: 768px) 224px, 160px"
+                sizes="(min-width: 1280px) 384px, (min-width: 1024px) 288px, (min-width: 768px) 224px, 160px"
                 className="object-cover"
               />
             </div>
@@ -60,7 +60,7 @@ export function FwgWelcome() {
             </p>
             <h1
               id="welcome-heading"
-              className="text-balance text-4xl font-bold leading-tight text-[#2a1530] md:text-5xl lg:text-6xl"
+              className="text-balance text-4xl font-bold leading-tight text-[#2a1530] md:text-5xl lg:text-6xl xl:text-7xl"
             >
               Real Love for Little Rock.{" "}
               <span className="text-gradient">A Conversation Worth Continuing.</span>
@@ -68,7 +68,7 @@ export function FwgWelcome() {
           </div>
         </div>
 
-        <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed opacity-0 animate-fade-in-up animation-delay-400 md:gap-5 md:text-lg">
+        <div className="flex max-w-3xl flex-col gap-4 text-[15px] leading-relaxed opacity-0 animate-fade-in-up animation-delay-400 md:gap-5 md:text-lg">
           <p className="flex items-center gap-2 text-lg font-semibold text-brand-purple md:text-xl">
             Thank you for spending time in Little Rock!
             <Sparkles className="h-5 w-5 shrink-0 text-brand-gold animate-pulse-slow" aria-hidden="true" />
@@ -86,7 +86,7 @@ export function FwgWelcome() {
           <p>I hope our conversation continues well beyond your visit.</p>
         </div>
 
-        <div className="max-w-4xl opacity-0 animate-fade-in-up animation-delay-600">
+        <div className="opacity-0 animate-fade-in-up animation-delay-600">
           <FwgQuickLinks />
         </div>
       </div>
@@ -95,7 +95,7 @@ export function FwgWelcome() {
         <FwgYourStory />
       </div>
 
-      <figure className="relative mx-auto flex max-w-6xl flex-col opacity-0 animate-fade-in-up animation-delay-800 md:px-6">
+      <figure className="relative mx-auto flex max-w-7xl flex-col opacity-0 animate-fade-in-up animation-delay-800 md:px-6">
         <div className="relative">
           <div className="relative aspect-[2048/719] w-full overflow-hidden md:rounded-xl md:shadow-playful">
             <Image

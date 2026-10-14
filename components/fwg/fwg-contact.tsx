@@ -27,15 +27,15 @@ const links = [
 export function FwgContact() {
   return (
     <section id="connect" aria-labelledby="connect-heading" className="scroll-mt-6">
-      <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 md:px-10 md:py-20 lg:px-16">
         <div className="flex flex-col gap-4">
           <h2 id="connect-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             {"Let\u2019s Keep the Conversation Going"}
           </h2>
-          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
+          <p className="max-w-3xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {"The conversation doesn\u2019t have to end when the Arkansas Learning Journey does."}
           </p>
-          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
+          <p className="max-w-3xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {
               "Whether you\u2019re interested in supporting Rocktown Realness, collaborating on a community initiative, exchanging ideas, or exploring opportunities to work together, I\u2019d love to hear from you."
             }

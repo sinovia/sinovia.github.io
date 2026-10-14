@@ -23,7 +23,7 @@ const programs = [
 export function FwgRocktown() {
   return (
     <section id="rocktown" aria-labelledby="rocktown-heading" className="scroll-mt-6 bg-[#f3eaf5]">
-      <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 md:px-10 md:py-20 lg:px-16">
         <div className="flex flex-col gap-5">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Image src="/images/rocktown-realness-logo.png" alt="" width={48} height={48} className="shrink-0" />
@@ -31,7 +31,7 @@ export function FwgRocktown() {
               {"What We\u2019re Building Through Rocktown Realness"}
             </h2>
           </div>
-          <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed md:text-lg">
+          <div className="flex max-w-3xl flex-col gap-4 text-[15px] leading-relaxed md:text-lg">
             <p>
               Rocktown Realness turns community connection into practical action through storytelling, direct support,
               civic engagement, and shared experiences.
@@ -79,7 +79,7 @@ export function FwgRocktown() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
+          <p className="max-w-3xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {
               "We\u2019re proud of what\u2019s possible through practical coordination and community generosity. And we\u2019re equally interested in what becomes possible when that work is sustainably resourced."
             }
