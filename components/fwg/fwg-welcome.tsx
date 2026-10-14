@@ -21,7 +21,7 @@ export function FwgWelcome() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex max-w-4xl flex-col gap-7 px-6 pb-10 pt-8 md:gap-10 md:pb-14 md:pt-10">
+      <div className="relative mx-auto flex max-w-5xl flex-col gap-7 px-6 pb-10 pt-8 md:gap-10 md:pb-14 md:pt-10">
         <nav aria-label="Site" className="opacity-0 animate-fade-in-up">
           <Link
             href="/"
@@ -31,15 +31,41 @@ export function FwgWelcome() {
           </Link>
         </nav>
 
-        <div className="flex flex-col gap-6 opacity-0 animate-fade-in-up animation-delay-200">
-          <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-purple">
-            <MapPin className="h-4 w-4 text-brand-gold animate-float" aria-hidden="true" />
-            {"Arkansas Learning Journey \u00b7 October 2026"}
-          </p>
-          <h1 id="welcome-heading" className="text-balance text-4xl font-bold leading-tight text-[#2a1530] md:text-6xl">
-            Real Love for Little Rock.{" "}
-            <span className="text-gradient">A Conversation Worth Continuing.</span>
-          </h1>
+        <div className="flex flex-col gap-8 md:flex-row-reverse md:items-center md:justify-between md:gap-12">
+          <div className="relative w-32 shrink-0 self-start opacity-0 animate-fade-in-right sm:w-40 md:w-56 md:self-center lg:w-72">
+            <div
+              className="absolute -inset-3 rounded-full border-2 border-dashed border-brand-gold/60 animate-spin-slow md:-inset-4"
+              aria-hidden="true"
+            />
+            <div className="relative aspect-square overflow-hidden rounded-full shadow-playful animate-float">
+              <Image
+                src="/images/rocktown-realness-logo.png"
+                alt="Rocktown Realness logo: a raised fist holding a sunflower inside a purple circle"
+                fill
+                priority
+                sizes="(min-width: 1024px) 288px, (min-width: 768px) 224px, 160px"
+                className="object-cover"
+              />
+            </div>
+            <Star
+              className="absolute -right-1 -top-1 h-5 w-5 fill-brand-gold text-brand-gold animate-pulse-slow md:h-7 md:w-7"
+              aria-hidden="true"
+            />
+          </div>
+
+          <div className="flex flex-col gap-6 opacity-0 animate-fade-in-up animation-delay-200">
+            <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-purple">
+              <MapPin className="h-4 w-4 shrink-0 text-brand-gold animate-float" aria-hidden="true" />
+              {"Arkansas Learning Journey \u00b7 October 2026"}
+            </p>
+            <h1
+              id="welcome-heading"
+              className="text-balance text-4xl font-bold leading-tight text-[#2a1530] md:text-5xl lg:text-6xl"
+            >
+              Real Love for Little Rock.{" "}
+              <span className="text-gradient">A Conversation Worth Continuing.</span>
+            </h1>
+          </div>
         </div>
 
         <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed opacity-0 animate-fade-in-up animation-delay-400 md:gap-5 md:text-lg">
@@ -60,7 +86,7 @@ export function FwgWelcome() {
           <p>I hope our conversation continues well beyond your visit.</p>
         </div>
 
-        <div className="opacity-0 animate-fade-in-up animation-delay-600">
+        <div className="max-w-4xl opacity-0 animate-fade-in-up animation-delay-600">
           <FwgQuickLinks />
         </div>
       </div>
