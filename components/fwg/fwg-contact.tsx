@@ -1,7 +1,6 @@
-import { Globe, Linkedin, Mail, Heart } from "lucide-react"
+import { Briefcase, Heart, Linkedin, Mail } from "lucide-react"
 
 const links = [
-  { label: "Email", value: "sinovia@hey.com", href: "mailto:sinovia@hey.com", icon: Mail, external: false },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/somayfield",
@@ -9,56 +8,74 @@ const links = [
     icon: Linkedin,
     external: true,
   },
-  { label: "Professional website", value: "sinoviamayfield.com", href: "/", icon: Globe, external: false },
   {
-    label: "Rocktown Realness",
+    label: "Community work",
     value: "rocktownrealness.com",
     href: "https://rocktownrealness.com",
     icon: Heart,
     external: true,
   },
+  {
+    label: "Professional work",
+    value: "sinoviamayfield.com",
+    href: "https://sinoviamayfield.com",
+    icon: Briefcase,
+    external: false,
+  },
 ]
 
 export function FwgContact() {
   return (
-    <footer aria-labelledby="contact-heading" className="bg-brand-purple text-white">
+    <section id="connect" aria-labelledby="connect-heading" className="scroll-mt-6">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
         <div className="flex flex-col gap-4">
-          <h2 id="contact-heading" className="text-3xl font-bold md:text-4xl">
-            {"Let\u2019s keep the conversation going"}
+          <h2 id="connect-heading" className="text-3xl font-bold text-brand-purple md:text-4xl">
+            {"Let\u2019s Keep the Conversation Going"}
           </h2>
-          <p className="max-w-2xl text-pretty text-lg leading-relaxed text-white/85">
+          <p className="max-w-2xl text-pretty text-lg leading-relaxed">
+            {"The conversation doesn\u2019t have to end when the Arkansas Learning Journey does."}
+          </p>
+          <p className="max-w-2xl text-pretty text-lg leading-relaxed">
             {
-              "Whether you\u2019re interested in Rocktown Realness, my professional work in digital transformation and strategic initiatives, or simply exchanging ideas about how communities put resources to work, I\u2019d love to stay connected."
+              "Whether you\u2019re interested in supporting Rocktown Realness, collaborating on a community initiative, exchanging ideas, or exploring opportunities to work together, I\u2019d love to hear from you."
             }
           </p>
         </div>
 
-        <div className="flex flex-col gap-5">
-          <p className="text-xl font-semibold">Sinovia Mayfield</p>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {links.map(({ label, value, href, icon: Icon, external }) => (
-              <li key={label}>
-                <a
-                  href={href}
-                  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                  className="flex items-center gap-4 rounded-lg border border-white/20 p-4 transition-colors hover:border-brand-gold hover:bg-white/5"
-                >
-                  <Icon className="h-5 w-5 shrink-0 text-brand-gold" aria-hidden="true" />
-                  <span className="flex flex-col">
-                    <span className="text-xs font-semibold uppercase tracking-[0.15em] text-white/70">{label}</span>
-                    <span className="font-medium">{value}</span>
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <a
+          href="mailto:speak@rocktownrealness.com"
+          className="flex flex-col gap-1 rounded-xl bg-brand-gold p-6 text-[#2a1530] transition-transform hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0 md:p-8"
+        >
+          <span className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em]">
+            <Mail className="h-4 w-4" aria-hidden="true" />
+            Email
+          </span>
+          <span className="break-all text-2xl font-bold md:text-3xl">speak@rocktownrealness.com</span>
+        </a>
 
-        <p className="border-t border-white/20 pt-8 text-lg font-semibold text-brand-gold">
+        <ul className="grid gap-3 sm:grid-cols-3">
+          {links.map(({ label, value, href, icon: Icon, external }) => (
+            <li key={label}>
+              <a
+                href={href}
+                {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className="flex items-center gap-3 rounded-xl border border-brand-purple/20 p-4 transition-colors hover:border-brand-purple"
+              >
+                <Icon className="h-5 w-5 shrink-0 text-brand-purple" aria-hidden="true" />
+                <span className="flex min-w-0 flex-col">
+                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#2a1530]/70">{label}</span>
+                  <span className="truncate font-medium">{value}</span>
+                </span>
+                {external && <span className="sr-only">(opens in a new tab)</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <p className="border-t border-brand-purple/15 pt-8 text-xl font-semibold text-brand-purple">
           Small City. Big Hearts. Real Love for Little Rock.
         </p>
       </div>
-    </footer>
+    </section>
   )
 }

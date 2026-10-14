@@ -1,47 +1,53 @@
 import type { Metadata } from "next"
 
-import { FwgHero } from "@/components/fwg/fwg-hero"
+import { FwgWelcome } from "@/components/fwg/fwg-welcome"
 import { FwgAbout } from "@/components/fwg/fwg-about"
+import { FwgRocktown } from "@/components/fwg/fwg-rocktown"
 import { FwgIdeas } from "@/components/fwg/fwg-ideas"
-import { FwgMural } from "@/components/fwg/fwg-mural"
-import { FwgWork } from "@/components/fwg/fwg-work"
-import { FwgGrowth } from "@/components/fwg/fwg-growth"
+import { FwgOpportunities } from "@/components/fwg/fwg-opportunities"
+import { FwgYourStory } from "@/components/fwg/fwg-your-story"
 import { FwgContact } from "@/components/fwg/fwg-contact"
 
-const title = "Real Love for Little Rock | A Note for the Funders Working Group"
+const title = "Arkansas Learning Journey 2026 | Sinovia Mayfield"
 const description =
-  "A note from Sinovia Mayfield to friends from the Funders Working Group's 2026 Arkansas Learning Journey: ideas on narrative, care, and community investment, and the work of Rocktown Realness."
+  "Continue the conversation with Sinovia Mayfield about Rocktown Realness, narrative change, community investment, civic infrastructure, and real love for Little Rock."
+const ogImage = {
+  url: "/images/lady-justice-mural.jpg",
+  width: 2048,
+  height: 719,
+  alt: "Lady Justice mural by Joel Boyd showing the Little Rock skyline at sunset",
+}
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
-  alternates: { canonical: "/fwg" },
+  alternates: { canonical: "https://sinoviamayfield.com/fwg" },
   openGraph: {
     title,
     description,
     url: "https://sinoviamayfield.com/fwg",
     siteName: "Sinovia Mayfield",
-    images: [{ url: "/images/sinovia-headshot.jpg", alt: "Sinovia Mayfield" }],
+    images: [ogImage],
     locale: "en_US",
-    type: "article",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/sinovia-headshot.jpg"],
+    images: [ogImage.url],
   },
 }
 
 export default function FwgPage() {
   return (
-    <main className="min-h-screen bg-[#fbf8fc] text-[#2a1530]">
-      <FwgHero />
+    <main className="min-h-screen overflow-x-hidden bg-[#fbf8fc] font-outfit text-[#2a1530]">
+      <FwgWelcome />
       <FwgAbout />
-      <FwgMural />
-      <FwgWork />
+      <FwgRocktown />
       <FwgIdeas />
-      <FwgGrowth />
+      <FwgOpportunities />
+      <FwgYourStory />
       <FwgContact />
     </main>
   )
