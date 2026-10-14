@@ -18,7 +18,6 @@ import {
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Sparkles as SparkleEffect } from "@/components/sparkle"
 
 // Structured Data
 const structuredData = {
@@ -91,8 +90,6 @@ export default function Home() {
           {/* Decorative elements */}
           <div className="absolute top-20 right-20 w-16 h-16 bg-brand-gold/20 rounded-full animate-pulse-slow"></div>
           <div className="absolute bottom-20 left-20 w-24 h-24 bg-brand-purple/20 rounded-full animate-pulse-slow animation-delay-1000"></div>
-          <SparkleEffect count={10} color="#ffb723" />
-
           <div className="container mx-auto max-w-5xl relative z-10">
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/50 relative overflow-hidden">
               {/* Decorative corner sparkles */}
@@ -213,7 +210,6 @@ export default function Home() {
 
         {/* Choose Your Path Section - Dynamic 2x2 Grid */}
         <section id="services" className="py-16 px-4 md:px-6 lg:px-8 relative">
-          <SparkleEffect count={8} color="#7f318b" />
           <div className="container mx-auto max-w-6xl relative">
             <div className="text-center mb-12 animate-fade-in-up">
               <h2 className="text-3xl font-bold mb-6 text-gradient inline-block">Choose Your Path</h2>
