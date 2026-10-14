@@ -7,6 +7,11 @@ const links = [
   { label: "Explore My Professional Work", href: "https://sinoviamayfield.com", icon: Briefcase, external: false },
 ]
 
+const jumpLinks = [
+  { label: "Jump to Partnership Opportunities", href: "#opportunities" },
+  { label: "Now You Have a Little Rock Story, Too", href: "#your-story" },
+]
+
 export function FwgQuickLinks() {
   return (
     <nav aria-label="Quick links" className="flex flex-col gap-5 md:rounded-xl md:bg-[#f3eaf5] md:p-6">
@@ -25,13 +30,19 @@ export function FwgQuickLinks() {
           </li>
         ))}
       </ul>
-      <a
-        href="#opportunities"
-        className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-brand-purple underline decoration-brand-gold decoration-2 underline-offset-4"
-      >
-        <ArrowDown className="h-4 w-4" aria-hidden="true" />
-        Jump to Partnership Opportunities
-      </a>
+      <ul className="flex flex-col gap-3">
+        {jumpLinks.map(({ label, href }) => (
+          <li key={href}>
+            <a
+              href={href}
+              className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-brand-purple underline decoration-brand-gold decoration-2 underline-offset-4"
+            >
+              <ArrowDown className="h-4 w-4 shrink-0" aria-hidden="true" />
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
     </nav>
   )
 }
