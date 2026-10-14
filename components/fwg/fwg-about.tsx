@@ -5,18 +5,25 @@ export function FwgAbout() {
   return (
     <section id="about" aria-labelledby="about-heading" className="scroll-mt-6 border-t border-brand-purple/15">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:flex-row md:items-start md:gap-14 md:py-20">
-        <div className="relative aspect-square w-40 shrink-0 overflow-hidden rounded-full border-4 border-brand-gold md:w-56">
-          <Image
-            src="/images/sinovia-headshot.jpg"
-            alt="Portrait of Sinovia Mayfield"
-            fill
-            sizes="(max-width: 768px) 160px, 224px"
-            className="object-cover"
+        <div className="relative w-40 shrink-0 md:w-56">
+          <div className="relative aspect-square w-full overflow-hidden rounded-full border-4 border-brand-gold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="absolute inset-0 z-10 bg-gradient-to-br from-brand-purple/10 to-brand-gold/10" aria-hidden="true" />
+            <Image
+              src="/images/sinovia-headshot.jpg"
+              alt="Portrait of Sinovia Mayfield"
+              fill
+              sizes="(max-width: 768px) 160px, 224px"
+              className="object-cover"
+            />
+          </div>
+          <div
+            className="absolute -bottom-2 -right-2 h-10 w-10 rounded-full bg-brand-gold/30 animate-pulse-slow"
+            aria-hidden="true"
           />
         </div>
 
-        <div className="flex flex-col gap-5 text-lg leading-relaxed">
-          <h2 id="about-heading" className="text-3xl font-bold text-brand-purple md:text-4xl">
+        <div className="flex flex-col gap-5 text-[15px] leading-relaxed md:text-lg">
+          <h2 id="about-heading" className="w-fit text-3xl font-bold text-gradient md:text-4xl">
             A Little About Me
           </h2>
           <p>
@@ -36,7 +43,7 @@ export function FwgAbout() {
             </a>
             , a hyperlocal civic platform rooted in real love for Little Rock.
           </p>
-          <p className="border-l-4 border-brand-gold pl-5 text-xl font-medium text-[#2a1530]">
+          <p className="border-l-4 border-brand-gold pl-5 text-[17px] font-medium md:text-xl text-[#2a1530]">
             My work across both spaces has a common thread: connecting people, pixels, and purpose to turn good ideas
             into practical action.
           </p>
@@ -47,7 +54,7 @@ export function FwgAbout() {
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-base font-semibold">
             <a
-              href="https://sinoviamayfield.com"
+              href="/"
               className="text-brand-purple underline decoration-brand-gold decoration-2 underline-offset-4"
             >
               Professional work

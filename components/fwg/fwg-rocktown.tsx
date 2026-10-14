@@ -25,13 +25,13 @@ export function FwgRocktown() {
     <section id="rocktown" aria-labelledby="rocktown-heading" className="scroll-mt-6 bg-[#f3eaf5]">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 md:py-20">
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Image src="/images/rocktown-realness-logo.png" alt="" width={48} height={48} className="shrink-0" />
-            <h2 id="rocktown-heading" className="text-balance text-3xl font-bold text-brand-purple md:text-4xl">
+            <h2 id="rocktown-heading" className="text-balance text-3xl font-bold text-gradient md:text-4xl">
               {"What We\u2019re Building Through Rocktown Realness"}
             </h2>
           </div>
-          <div className="flex max-w-2xl flex-col gap-4 text-lg leading-relaxed">
+          <div className="flex max-w-2xl flex-col gap-4 text-[15px] leading-relaxed md:text-lg">
             <p>
               Rocktown Realness turns community connection into practical action through storytelling, direct support,
               civic engagement, and shared experiences.
@@ -46,14 +46,17 @@ export function FwgRocktown() {
 
         <ul className="grid gap-4 sm:grid-cols-2">
           {programs.map((program) => (
-            <li key={program.name} className="flex flex-col gap-2 rounded-xl bg-white p-6">
+            <li
+                key={program.name}
+                className="flex flex-col gap-2 rounded-xl border-2 border-transparent bg-white p-5 transition-all md:p-6 duration-300 hover:-translate-y-1 hover:border-brand-purple/20 hover:shadow-lg"
+              >
               <h3 className="text-lg font-semibold text-brand-purple">{program.name}</h3>
-              <p className="leading-relaxed text-[#2a1530]/80">{program.body}</p>
+              <p className="text-[15px] leading-relaxed text-[#2a1530]/80 md:text-base">{program.body}</p>
             </li>
           ))}
         </ul>
 
-        <div className="flex flex-col gap-5 rounded-xl bg-brand-gold p-6 text-[#2a1530] md:p-10">
+        <div className="flex flex-col gap-5 rounded-xl bg-brand-gold p-5 text-[#2a1530] md:p-10">
           <h3 className="text-sm font-semibold uppercase tracking-[0.2em]">Feed Our Folks: impact snapshot</h3>
           <dl className="flex flex-col gap-6 sm:flex-row sm:gap-12">
             <div className="flex flex-col-reverse gap-1 sm:w-1/2">
@@ -76,7 +79,7 @@ export function FwgRocktown() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <p className="max-w-2xl text-pretty text-lg leading-relaxed">
+          <p className="max-w-2xl text-pretty text-[15px] leading-relaxed md:text-lg">
             {
               "We\u2019re proud of what\u2019s possible through practical coordination and community generosity. And we\u2019re equally interested in what becomes possible when that work is sustainably resourced."
             }
@@ -85,7 +88,7 @@ export function FwgRocktown() {
             href="https://rocktownrealness.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-colors hover:bg-[#6a2874] sm:w-fit"
+            className="btn-playful inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-purple px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#6a2874] sm:w-fit"
           >
             Explore Rocktown Realness
             <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

@@ -291,6 +291,11 @@
   color: transparent;
 }
 
+/* /fwg sits on a pale lavender ground, so the gold end is deepened to keep >=4:1 contrast */
+.fwg-motion .text-gradient {
+  background-image: linear-gradient(90deg, #7f318b, #a8650a);
+}
+
 /* Whimsical border */
 .border-whimsical {
   border-image: linear-gradient(45deg, #7f318b, #ffb723, #7f318b) 1;
@@ -360,4 +365,29 @@
 
 .btn-playful:hover::before {
   left: 100%;
+}
+
+/* Scroll reveal (only hides content when JS can reveal it again) */
+@media (scripting: enabled) {
+  .fwg-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .fwg-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fwg-reveal,
+  .fwg-motion,
+  .fwg-motion * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }

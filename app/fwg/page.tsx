@@ -5,8 +5,8 @@ import { FwgAbout } from "@/components/fwg/fwg-about"
 import { FwgRocktown } from "@/components/fwg/fwg-rocktown"
 import { FwgIdeas } from "@/components/fwg/fwg-ideas"
 import { FwgOpportunities } from "@/components/fwg/fwg-opportunities"
-import { FwgYourStory } from "@/components/fwg/fwg-your-story"
 import { FwgContact } from "@/components/fwg/fwg-contact"
+import { FwgReveal } from "@/components/fwg/fwg-reveal"
 
 const title = "Arkansas Learning Journey 2026 | Sinovia Mayfield"
 const description =
@@ -41,14 +41,23 @@ export const metadata: Metadata = {
 
 export default function FwgPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#fbf8fc] font-outfit text-[#2a1530]">
+    <main className="fwg-motion min-h-screen overflow-x-hidden bg-[#fbf8fc] font-outfit text-[#2a1530]">
       <FwgWelcome />
-      <FwgAbout />
-      <FwgRocktown />
-      <FwgIdeas />
-      <FwgOpportunities />
-      <FwgYourStory />
-      <FwgContact />
+      <FwgReveal>
+        <FwgAbout />
+      </FwgReveal>
+      <FwgReveal>
+        <FwgRocktown />
+      </FwgReveal>
+      <FwgReveal>
+        <FwgIdeas />
+      </FwgReveal>
+      <FwgReveal>
+        <FwgOpportunities />
+      </FwgReveal>
+      <FwgReveal>
+        <FwgContact />
+      </FwgReveal>
     </main>
   )
 }
