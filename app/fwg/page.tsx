@@ -5,7 +5,6 @@ import { FwgAbout } from "@/components/fwg/fwg-about"
 import { FwgRocktown } from "@/components/fwg/fwg-rocktown"
 import { FwgIdeas } from "@/components/fwg/fwg-ideas"
 import { FwgOpportunities } from "@/components/fwg/fwg-opportunities"
-import { FwgYourStory } from "@/components/fwg/fwg-your-story"
 import { FwgContact } from "@/components/fwg/fwg-contact"
 import { FwgReveal } from "@/components/fwg/fwg-reveal"
 
@@ -55,9 +54,6 @@ export default function FwgPage() {
       </FwgReveal>
       <FwgReveal>
         <FwgOpportunities />
-      </FwgReveal>
-      <FwgReveal>
-        <FwgYourStory />
       </FwgReveal>
       <FwgReveal>
         <FwgContact />

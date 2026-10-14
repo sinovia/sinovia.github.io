@@ -9,7 +9,6 @@ const links = [
 
 const jumpLinks = [
   { label: "Jump to Partnership Opportunities", href: "#opportunities" },
-  { label: "Now You Have a Little Rock Story, Too", href: "#your-story" },
 ]
 
 export function FwgQuickLinks() {

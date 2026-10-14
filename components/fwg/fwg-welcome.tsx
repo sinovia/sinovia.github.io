@@ -3,6 +3,7 @@ import Link from "next/link"
 import { MapPin, Sparkles, Star } from "lucide-react"
 
 import { FwgQuickLinks } from "@/components/fwg/fwg-quick-links"
+import { FwgYourStory } from "@/components/fwg/fwg-your-story"
 
 export function FwgWelcome() {
   return (
@@ -62,6 +63,10 @@ export function FwgWelcome() {
         <div className="opacity-0 animate-fade-in-up animation-delay-600">
           <FwgQuickLinks />
         </div>
+      </div>
+
+      <div className="mb-14 opacity-0 animate-fade-in-up animation-delay-800 md:mb-20">
+        <FwgYourStory />
       </div>
 
       <figure className="relative mx-auto flex max-w-6xl flex-col opacity-0 animate-fade-in-up animation-delay-800 md:px-6">
