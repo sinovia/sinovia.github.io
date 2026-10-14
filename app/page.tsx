@@ -18,7 +18,6 @@ import {
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Sparkles as SparkleEffect } from "@/components/sparkle"
 
 // Structured Data
 const structuredData = {
@@ -91,8 +90,6 @@ export default function Home() {
           {/* Decorative elements */}
           <div className="absolute top-20 right-20 w-16 h-16 bg-brand-gold/20 rounded-full animate-pulse-slow"></div>
           <div className="absolute bottom-20 left-20 w-24 h-24 bg-brand-purple/20 rounded-full animate-pulse-slow animation-delay-1000"></div>
-          <SparkleEffect count={10} color="#ffb723" />
-
           <div className="container mx-auto max-w-5xl relative z-10">
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/50 relative overflow-hidden">
               {/* Decorative corner sparkles */}
@@ -213,7 +210,6 @@ export default function Home() {
 
         {/* Choose Your Path Section - Dynamic 2x2 Grid */}
         <section id="services" className="py-16 px-4 md:px-6 lg:px-8 relative">
-          <SparkleEffect count={8} color="#7f318b" />
           <div className="container mx-auto max-w-6xl relative">
             <div className="text-center mb-12 animate-fade-in-up">
               <h2 className="text-3xl font-bold mb-6 text-gradient inline-block">Choose Your Path</h2>
@@ -533,35 +529,40 @@ export default function Home() {
                     <div className="transform group-hover:translate-x-2 transition-transform duration-300">
                       <h4 className="font-semibold text-brand-purple mb-2 flex items-center gap-2">
                         <Target className="h-4 w-4" />
-                        Recent & Upcoming:
+                        Selected Speaking Engagements & Workshops
                       </h4>
-                      <ul className="space-y-1 text-sm text-gray-600">
-                        <li className="flex items-start gap-2 text-gray-600">
-                          <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow">
-                            ✓
-                          </span>
-                          <span>ROCK Academy Graduation & Little Rock City Hall</span>
-                        </li>
-                        <li className="flex items-start gap-2 text-gray-600">
-                          <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow animation-delay-400">
-                            ✓
-                          </span>
-                          <span>AI for productivity workshops in nonprofit spaces</span>
-                        </li>
-                        <li className="flex items-start gap-2 text-gray-600">
-                          <span className="text-brand-gold group-hover:scale-125 transition-transform duration-300 animate-pulse-slow animation-delay-800">
-                            ✓
-                          </span>
+                      <div className="space-y-3 text-sm text-gray-600">
+                        <article className="rounded-lg border border-brand-gold/30 bg-white/60 p-3">
+                          <p className="font-semibold text-brand-purple">Fueling the Narrative: Changing the Story to Change the Future</p>
+                          <p className="mt-1 text-xs font-medium text-brand-purple/70">October 2026 | Arkansas Learning Journey</p>
+                          <p className="mt-1 text-xs">Funders Working Group for Racial Justice and Health Equity · Little Rock, Arkansas</p>
+                          <p className="mt-2 text-xs">Panelist discussing narrative change, community storytelling, civic engagement, and turning community values into meaningful action.</p>
                           <Link
-                            href="https://bureauofdigital.com/event/digital-pm-summit-2025"
+                            href="https://sinoviamayfield.com/fwg"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-brand-purple hover:underline transition-all duration-200"
+                            className="mt-2 inline-block text-xs font-semibold text-brand-purple hover:underline"
                           >
-                            2025 Digital PM Summit (Portland, OR)
+                            Learn more at FWG →
                           </Link>
-                        </li>
-                      </ul>
+                        </article>
+                        <article className="rounded-lg border border-brand-gold/30 bg-white/60 p-3">
+                          <p className="font-semibold text-brand-purple">Soft Skills & Hard Deadlines: Managing Projects with Logic & Heart</p>
+                          <p className="mt-1 text-xs font-medium text-brand-purple/70">October 2025 | Digital PM Summit</p>
+                          <p className="mt-1 text-xs">Portland, Oregon</p>
+                          <p className="mt-2 text-xs">Speaker exploring the intersection of human-centered leadership, emotional intelligence, and effective project management.</p>
+                        </article>
+                        <ul className="space-y-1">
+                          <li className="flex items-start gap-2">
+                            <span className="text-brand-gold">✓</span>
+                            <span>ROCK Academy Graduation & Little Rock City Hall</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-brand-gold">✓</span>
+                            <span>AI for productivity workshops in nonprofit spaces</span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div className="bg-white/50 rounded-lg p-3 group-hover:bg-white/80 transition-all duration-300 border border-brand-gold/20">
                       <h4 className="font-semibold text-brand-purple mb-1 text-sm">Available For:</h4>

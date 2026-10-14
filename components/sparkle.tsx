@@ -9,8 +9,10 @@ interface SparkleProps {
   duration?: number
 }
 
+type Sparkle = { id: number; x: number; y: number; size: number; animationDelay: number }
+
 export function Sparkles({ color = "#ffb723", size = 6, count = 15, duration = 1000 }: SparkleProps) {
-  const [sparkles, setSparkles] = useState<Array<{ id: number; x: number; y: number; size: number }>>([])
+  const [sparkles, setSparkles] = useState<Sparkle[]>([])
 
   useEffect(() => {
     // Create initial sparkles
@@ -19,6 +21,7 @@ export function Sparkles({ color = "#ffb723", size = 6, count = 15, duration = 1
       x: Math.random() * 100,
       y: Math.random() * 100,
       size: size * (0.5 + Math.random() * 0.5),
+      animationDelay: Math.random() * 2,
     }))
     setSparkles(initialSparkles)
 
@@ -30,6 +33,7 @@ export function Sparkles({ color = "#ffb723", size = 6, count = 15, duration = 1
           x: Math.random() * 100,
           y: Math.random() * 100,
           size: size * (0.5 + Math.random() * 0.5),
+          animationDelay: Math.random() * 2,
         })),
       )
     }, duration)
