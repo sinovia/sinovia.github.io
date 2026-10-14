@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function FwgPage() {
   return (
-    <main className="fwg-motion min-h-screen overflow-x-hidden bg-[#fbf8fc] font-outfit text-[#2a1530]">
+    <main className="fwg-motion min-h-screen [overflow-x:clip] bg-[#fbf8fc] font-outfit text-[#2a1530]">
       <FwgWelcome />
       <FwgReveal>
         <FwgAbout />
