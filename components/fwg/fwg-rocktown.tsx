@@ -60,13 +60,13 @@ export function FwgRocktown() {
               <dt className="leading-relaxed">
                 grocery orders analyzed to better understand the everyday essentials neighbors request
               </dt>
-              <dd className="text-5xl font-bold">93</dd>
+              <dd className="text-5xl font-bold">154</dd>
             </div>
             <div className="flex flex-col-reverse gap-1 sm:w-1/2">
               <dt className="leading-relaxed">
                 pounds of additional food redistributed through Potluck Food Rescue (approximate)
               </dt>
-              <dd className="text-5xl font-bold">~1,500</dd>
+              <dd className="text-5xl font-bold">~2,500</dd>
             </div>
           </dl>
           <p className="border-t border-[#2a1530]/20 pt-4 text-sm leading-relaxed">
