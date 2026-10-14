@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { FwgHero } from "@/components/fwg/fwg-hero"
 import { FwgAbout } from "@/components/fwg/fwg-about"
 import { FwgIdeas } from "@/components/fwg/fwg-ideas"
+import { FwgMural } from "@/components/fwg/fwg-mural"
 import { FwgWork } from "@/components/fwg/fwg-work"
 import { FwgGrowth } from "@/components/fwg/fwg-growth"
 import { FwgContact } from "@/components/fwg/fwg-contact"
@@ -37,6 +38,7 @@ export default function FwgPage() {
     <main className="min-h-screen bg-[#fbf8fc] text-[#2a1530]">
       <FwgHero />
       <FwgAbout />
+      <FwgMural />
       <FwgIdeas />
       <FwgWork />
       <FwgGrowth />
