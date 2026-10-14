@@ -18,7 +18,7 @@ const links = [
   {
     label: "Professional work",
     value: "sinoviamayfield.com",
-    href: "https://sinoviamayfield.com",
+    href: "/",
     icon: Briefcase,
     external: false,
   },

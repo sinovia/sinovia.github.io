@@ -4,7 +4,7 @@ const links = [
   { label: "Explore Rocktown Realness", href: "https://rocktownrealness.com", icon: Heart, external: true },
   { label: "Email Sinovia", href: "mailto:speak@rocktownrealness.com", icon: Mail, external: false },
   { label: "Connect on LinkedIn", href: "https://www.linkedin.com/in/somayfield/", icon: Linkedin, external: true },
-  { label: "Explore My Professional Work", href: "https://sinoviamayfield.com", icon: Briefcase, external: false },
+  { label: "Explore My Professional Work", href: "/", icon: Briefcase, external: false },
 ]
 
 const jumpLinks = [

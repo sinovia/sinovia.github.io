@@ -54,7 +54,7 @@ export function FwgAbout() {
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-base font-semibold">
             <a
-              href="https://sinoviamayfield.com"
+              href="/"
               className="text-brand-purple underline decoration-brand-gold decoration-2 underline-offset-4"
             >
               Professional work
