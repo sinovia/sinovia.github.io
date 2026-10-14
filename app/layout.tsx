@@ -68,9 +68,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://sinoviamayfield.com" />
         <meta name="geo.region" content="US-AR" />
         <meta name="geo.placename" content="Little Rock" />
         <meta name="geo.position" content="34.7465;-92.2896" />
