@@ -10,15 +10,15 @@ const links = [
 export function FwgQuickLinks() {
   return (
     <nav aria-label="Quick links" className="flex flex-col gap-5 md:rounded-xl md:bg-[#f3eaf5] md:p-6">
-      <ul className="grid gap-3 sm:grid-cols-2">
+      <ul className="grid grid-cols-2 gap-3">
         {links.map(({ label, href, icon: Icon, external }) => (
-          <li key={label}>
+          <li key={label} className="flex">
             <a
               href={href}
               {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className="flex min-h-12 items-center gap-3 rounded-xl border border-brand-purple/15 bg-white px-5 py-3.5 text-[15px] font-medium md:py-4 md:text-base md:border-transparent text-[#2a1530] transition-colors hover:text-brand-purple focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-purple"
+              className="flex min-h-24 w-full flex-col items-start justify-center gap-2 rounded-xl border border-brand-purple/15 bg-white px-4 py-4 text-sm font-medium leading-snug text-[#2a1530] transition-colors hover:text-brand-purple focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-purple sm:min-h-12 sm:flex-row sm:items-center sm:justify-start sm:gap-3 sm:px-5 sm:py-3.5 sm:text-[15px] md:border-transparent md:py-4 md:text-base"
             >
-              <Icon className="h-4 w-4 shrink-0 text-brand-purple" aria-hidden="true" />
+              <Icon className="h-5 w-5 shrink-0 text-brand-purple sm:h-4 sm:w-4" aria-hidden="true" />
               {label}
               {external && <span className="sr-only">(opens in a new tab)</span>}
             </a>
