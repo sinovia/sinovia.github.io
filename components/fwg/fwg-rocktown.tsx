@@ -86,10 +86,6 @@ export function FwgRocktown() {
               <dd className="text-5xl font-bold">~2,500</dd>
             </div>
           </dl>
-          <p className="border-t border-[#2a1530]/20 pt-4 text-sm leading-relaxed">
-            These measures represent different components of our food support work and should not be combined into a
-            single household-served count.
-          </p>
         </div>
 
         <div className="flex flex-col gap-6">
